@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TruEnroll | AI transcript processing for admissions</title>
+<meta name="description" content="TruEnroll helps universities & evaluators worldwide automate transcript evaluation, credit conversion, equivalent GPA calculations across multiple languages.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://tanmaysinha-design.github.io/">
+<meta name="theme-color" content="#F9FAFC">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TruEnroll">
+<meta property="og:title" content="TruEnroll | AI transcript processing for admissions">
+<meta property="og:description" content="TruEnroll helps universities & evaluators worldwide automate transcript evaluation, credit conversion, equivalent GPA calculations across multiple languages.">
+<meta property="og:url" content="https://tanmaysinha-design.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;500;600;700&family=Geist+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/buttons.css">
+<link rel="stylesheet" href="/css/forms.css">
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/css/portal.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <path id="uv-top" d="M21 78.2A43 43 0 1 1 99 78.2"/><path id="uv-bot" d="M10 60A50 50 0 0 0 110 60"/>
+  <clipPath id="uv-sh"><path d="M44 38H76V66C76 80 68 87 60 91C52 87 44 80 44 66Z"/></clipPath>
+  <symbol id="uv-crest" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="58" fill="none" style="stroke:var(--uv1);stroke-width:2.6"/><circle cx="60" cy="60" r="55" fill="none" style="stroke:var(--uv2);stroke-width:.8"/>
+  <circle cx="60" cy="60" r="38" fill="none" style="stroke:var(--uv1);stroke-width:1.1"/>
+  <text font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="7" letter-spacing="1" style="fill:var(--uv1)"><textPath href="#uv-top" startOffset="50%" text-anchor="middle">UNIVERSIDADE DO VALE VERDE</textPath></text>
+  <text font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="7.4" letter-spacing="1.6" style="fill:var(--uv1)"><textPath href="#uv-bot" startOffset="50%" text-anchor="middle">FUNDADA EM 1952</textPath></text>
+  <path d="M10.5 60l2.3-2.3 2.3 2.3-2.3 2.3zM104.9 60l2.3-2.3 2.3 2.3-2.3 2.3z" style="fill:var(--uv2)"/>
+  <ellipse cx="45.2" cy="32.2" rx="6.4" ry="2.5" transform="rotate(-28.0 45.2 32.2)" style="fill:var(--uv1)"/><ellipse cx="74.8" cy="32.2" rx="6.4" ry="2.5" transform="rotate(28.0 74.8 32.2)" style="fill:var(--uv1)"/><ellipse cx="37.7" cy="37.7" rx="6.4" ry="2.5" transform="rotate(-45.0 37.7 37.7)" style="fill:var(--uv2)"/><ellipse cx="82.3" cy="37.7" rx="6.4" ry="2.5" transform="rotate(45.0 82.3 37.7)" style="fill:var(--uv2)"/><ellipse cx="32.2" cy="45.2" rx="6.4" ry="2.5" transform="rotate(-62.0 32.2 45.2)" style="fill:var(--uv1)"/><ellipse cx="87.8" cy="45.2" rx="6.4" ry="2.5" transform="rotate(62.0 87.8 45.2)" style="fill:var(--uv1)"/><ellipse cx="29.1" cy="54.0" rx="6.4" ry="2.5" transform="rotate(-79.0 29.1 54.0)" style="fill:var(--uv2)"/><ellipse cx="90.9" cy="54.0" rx="6.4" ry="2.5" transform="rotate(79.0 90.9 54.0)" style="fill:var(--uv2)"/><ellipse cx="28.7" cy="63.3" rx="6.4" ry="2.5" transform="rotate(-96.0 28.7 63.3)" style="fill:var(--uv1)"/><ellipse cx="91.3" cy="63.3" rx="6.4" ry="2.5" transform="rotate(96.0 91.3 63.3)" style="fill:var(--uv1)"/><ellipse cx="31.0" cy="72.3" rx="6.4" ry="2.5" transform="rotate(-113.0 31.0 72.3)" style="fill:var(--uv2)"/><ellipse cx="89.0" cy="72.3" rx="6.4" ry="2.5" transform="rotate(113.0 89.0 72.3)" style="fill:var(--uv2)"/><ellipse cx="35.9" cy="80.2" rx="6.4" ry="2.5" transform="rotate(-130.0 35.9 80.2)" style="fill:var(--uv1)"/><ellipse cx="84.1" cy="80.2" rx="6.4" ry="2.5" transform="rotate(130.0 84.1 80.2)" style="fill:var(--uv1)"/>
+  <path d="M44 38H76V66C76 80 68 87 60 91C52 87 44 80 44 66Z" style="fill:#E9F1EA"/>
+  <g clip-path="url(#uv-sh)">
+  <rect x="44" y="38" width="32" height="26" style="fill:#F4E6B8"/>
+  <g style="stroke:var(--uv2);stroke-width:1.4;stroke-linecap:round"><path d="M60 43.0L60 39.5" transform="rotate(-75 60 52)"/><path d="M60 43.0L60 39.5" transform="rotate(-50 60 52)"/><path d="M60 43.0L60 39.5" transform="rotate(-25 60 52)"/><path d="M60 43.0L60 39.5" transform="rotate(0 60 52)"/><path d="M60 43.0L60 39.5" transform="rotate(25 60 52)"/><path d="M60 43.0L60 39.5" transform="rotate(50 60 52)"/><path d="M60 43.0L60 39.5" transform="rotate(75 60 52)"/></g>
+  <circle cx="60" cy="52" r="6.2" style="fill:var(--uv2)"/>
+  <path d="M44 60C50 52 55 56 60 58C66 52 72 52 76 58V70H44Z" style="fill:var(--uv1);opacity:.78"/>
+  <path d="M44 64C52 59 58 63 63 62C68 60 72 61 76 63V70H44Z" style="fill:var(--uv1)"/>
+  <path d="M60 71L45 76V87L60 82L75 87V76Z" style="fill:#fff;stroke:var(--uv1);stroke-width:1"/>
+  <path d="M60 71V82M48 78.5L58 75.5M48 81.5L58 78.5M72 78.5L62 75.5M72 81.5L62 78.5" style="stroke:var(--uv1);stroke-width:.7;fill:none"/>
+  </g>
+  <path d="M44 38H76V66C76 80 68 87 60 91C52 87 44 80 44 66Z" fill="none" style="stroke:var(--uv1);stroke-width:2"/>
+  <path d="M52 33l2 3.4 3.8.4-2.8 2.6.8 3.8-3.8-1.9-3.4 1.9.8-3.8-2.8-2.6 3.8-.4z" transform="translate(7.5 -4.5) scale(.8)" style="fill:var(--uv2)"/>
+  </symbol></defs></svg>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tr-logo" viewBox="0 0 363 60"><path d="M29.88 44.08C30.4323 44.08 30.88 44.5277 30.88 45.08V58.2C30.88 58.7523 30.4323 59.2 29.88 59.2H24.16C11.7867 59.2 5.6 53.04 5.6 40.72V29.88C5.6 29.3277 5.15228 28.88 4.6 28.88H0.999999C0.447714 28.88 0 28.4323 0 27.88V15.08C0 14.5277 0.447715 14.08 1 14.08H4.6C5.15229 14.08 5.6 13.6323 5.6 13.08V4.2C5.6 3.64771 6.04772 3.2 6.6 3.2H22.36C22.9123 3.2 23.36 3.64771 23.36 4.2V13.08C23.36 13.6323 23.8077 14.08 24.36 14.08H29.72C30.2723 14.08 30.72 14.5277 30.72 15.08V27.88C30.72 28.4323 30.2723 28.88 29.72 28.88H24.36C23.8077 28.88 23.36 29.3277 23.36 29.88V41.04C23.36 42.1067 23.6 42.88 24.08 43.36C24.6133 43.84 25.4667 44.08 26.64 44.08H29.88Z" fill="#286CEE"/><path d="M55.4038 19.2047C55.4038 20.1845 56.7349 20.6277 57.4013 19.9094C58.7753 18.4283 60.3228 17.1785 62.0438 16.16C64.3477 14.7494 66.7346 13.9606 69.2045 13.7936C69.7555 13.7564 70.2038 14.2077 70.2038 14.76V31.72C70.2038 32.2723 69.756 32.72 69.2038 32.72H65.1637C61.8037 32.72 59.3237 33.3067 57.7238 34.48C56.1771 35.6533 55.4038 37.7333 55.4038 40.72V58.2C55.4038 58.7523 54.956 59.2 54.4038 59.2H38.6437C38.0915 59.2 37.6437 58.7523 37.6437 58.2V15.08C37.6437 14.5277 38.0915 14.08 38.6437 14.08H54.4038C54.956 14.08 55.4038 14.5277 55.4038 15.08V19.2047Z" fill="#286CEE"/><path d="M121.747 14.08C122.3 14.08 122.747 14.5277 122.747 15.08V58.2C122.747 58.7523 122.3 59.2 121.747 59.2H105.988C105.435 59.2 104.988 58.7523 104.988 58.2V55.6934C104.988 54.6979 103.567 54.2288 102.856 54.9258C101.848 55.9141 100.692 56.7789 99.3875 57.52C97.0942 58.8533 94.3475 59.52 91.1475 59.52C85.9742 59.52 81.9208 57.7867 78.9875 54.32C76.1075 50.8533 74.6675 46.16 74.6675 40.24V15.08C74.6675 14.5277 75.1152 14.08 75.6675 14.08H91.3475C91.8998 14.08 92.3475 14.5277 92.3475 15.08V38C92.3475 40.1333 92.9075 41.84 94.0275 43.12C95.2008 44.3467 96.7475 44.96 98.6675 44.96C100.641 44.96 102.188 44.3467 103.308 43.12C104.428 41.84 104.988 40.1333 104.988 38V15.08C104.988 14.5277 105.435 14.08 105.988 14.08H121.747Z" fill="#286CEE"/><path d="M149.529 16.72C148.976 16.72 148.529 17.1677 148.529 17.72V22.68C148.529 23.2323 148.976 23.68 149.529 23.68H165.129C165.681 23.68 166.129 24.1277 166.129 24.68V36.04C166.129 36.5923 165.681 37.04 165.129 37.04H149.529C148.976 37.04 148.529 37.4877 148.529 38.04V44.04C148.529 44.5923 148.976 45.04 149.529 45.04H167.529C168.081 45.04 168.529 45.4877 168.529 46.04V58.2C168.529 58.7523 168.081 59.2 167.529 59.2H131.769C131.216 59.2 130.769 58.7523 130.769 58.2V3.56C130.769 3.00772 131.216 2.56 131.769 2.56H167.529C168.081 2.56 168.529 3.00772 168.529 3.56V15.72C168.529 16.2723 168.081 16.72 167.529 16.72H149.529Z" fill="black"/><path d="M206.822 13.76C211.995 13.76 216.022 15.4933 218.902 18.96C221.835 22.4267 223.302 27.12 223.302 33.04V58.2C223.302 58.7523 222.854 59.2 222.302 59.2H206.622C206.07 59.2 205.622 58.7523 205.622 58.2V35.28C205.622 33.1467 205.035 31.4667 203.862 30.24C202.742 28.96 201.222 28.32 199.302 28.32C197.329 28.32 195.782 28.96 194.662 30.24C193.542 31.4667 192.982 33.1467 192.982 35.28V58.2C192.982 58.7523 192.534 59.2 191.982 59.2H176.222C175.67 59.2 175.222 58.7523 175.222 58.2V15.08C175.222 14.5277 175.67 14.08 176.222 14.08H191.982C192.534 14.08 192.982 14.5277 192.982 15.08V17.5866C192.982 18.5821 194.399 19.0481 195.105 18.3469C196.098 17.3616 197.23 16.4993 198.502 15.76C200.849 14.4267 203.622 13.76 206.822 13.76Z" fill="black"/><path d="M248.763 19.2047C248.763 20.1845 250.094 20.6277 250.761 19.9094C252.135 18.4283 253.682 17.1785 255.403 16.16C257.707 14.7494 260.094 13.9606 262.564 13.7936C263.115 13.7564 263.563 14.2077 263.563 14.76V31.72C263.563 32.2723 263.115 32.72 262.563 32.72H258.523C255.163 32.72 252.683 33.3067 251.083 34.48C249.536 35.6533 248.763 37.7333 248.763 40.72V58.2C248.763 58.7523 248.315 59.2 247.763 59.2H232.003C231.451 59.2 231.003 58.7523 231.003 58.2V15.08C231.003 14.5277 231.451 14.08 232.003 14.08H247.763C248.315 14.08 248.763 14.5277 248.763 15.08V19.2047Z" fill="black"/><path d="M289.787 59.76C285.254 59.76 281.174 58.8267 277.547 56.96C273.92 55.0933 271.067 52.4267 268.987 48.96C266.96 45.44 265.947 41.3333 265.947 36.64C265.947 31.9467 266.96 27.8667 268.987 24.4C271.067 20.88 273.92 18.1867 277.547 16.32C281.174 14.4533 285.254 13.52 289.787 13.52C294.32 13.52 298.4 14.4533 302.027 16.32C305.654 18.1867 308.48 20.88 310.507 24.4C312.587 27.8667 313.627 31.9467 313.627 36.64C313.627 41.3333 312.587 45.44 310.507 48.96C308.48 52.4267 305.654 55.0933 302.027 56.96C298.4 58.8267 294.32 59.76 289.787 59.76ZM289.787 44.4C291.44 44.4 292.827 43.76 293.947 42.48C295.067 41.1467 295.627 39.2 295.627 36.64C295.627 34.08 295.067 32.16 293.947 30.88C292.827 29.5467 291.44 28.88 289.787 28.88C288.134 28.88 286.747 29.5467 285.627 30.88C284.507 32.16 283.947 34.08 283.947 36.64C283.947 39.2 284.48 41.1467 285.547 42.48C286.667 43.76 288.08 44.4 289.787 44.4Z" fill="black"/><path d="M335.966 0C336.519 0 336.966 0.447715 336.966 1V58.2C336.966 58.7523 336.519 59.2 335.966 59.2H320.206C319.654 59.2 319.206 58.7523 319.206 58.2V1C319.206 0.447716 319.654 0 320.206 0H335.966Z" fill="black"/><path d="M361.747 0C362.3 0 362.747 0.447715 362.747 1V58.2C362.747 58.7523 362.3 59.2 361.747 59.2H345.987C345.435 59.2 344.987 58.7523 344.987 58.2V1C344.987 0.447716 345.435 0 345.987 0H361.747Z" fill="black"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="nv-file-check" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="m9 15 2 2 4-4" /></symbol><symbol id="nv-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol><symbol id="nv-calculator" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2" /> <line x1="8" x2="16" y1="6" y2="6" /> <line x1="16" x2="16" y1="14" y2="18" /> <path d="M16 10h.01" /> <path d="M12 10h.01" /> <path d="M8 10h.01" /> <path d="M12 14h.01" /> <path d="M8 14h.01" /> <path d="M12 18h.01" /> <path d="M8 18h.01" /></symbol><symbol id="nv-scan-text" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2" /> <path d="M17 3h2a2 2 0 0 1 2 2v2" /> <path d="M21 17v2a2 2 0 0 1-2 2h-2" /> <path d="M7 21H5a2 2 0 0 1-2-2v-2" /> <path d="M7 8h8" /> <path d="M7 12h10" /> <path d="M7 16h6" /></symbol><symbol id="nv-blocks" viewBox="0 0 24 24"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2" /> <rect x="14" y="2" width="8" height="8" rx="1" /></symbol><symbol id="nv-newspaper" viewBox="0 0 24 24"><path d="M15 18h-5" /> <path d="M18 14h-8" /> <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2" /> <rect width="8" height="4" x="10" y="6" rx="1" /></symbol><symbol id="nv-circle-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /> <path d="M12 17h.01" /></symbol><symbol id="nv-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol><symbol id="nv-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol><symbol id="nv-calendar-check" viewBox="0 0 24 24"><path d="M8 2v3" /> <path d="M16 2v3" /> <rect x="3" y="3" width="18" height="18" rx="2" /> <path d="M3 9h18" /> <path d="m9 15 2 2 4-4" /></symbol><symbol id="nv-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></symbol></defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+<div class="prog" id="prog" aria-hidden="true"></div>
+<nav aria-label="Primary">
+  <div class="nav-frost" aria-hidden="true"><span class="nf nf1"></span><span class="nf nf2"></span><span class="nf nf3"></span><span class="nf nf4"></span></div>
+  <div class="wrap">
+  <a class="logo" href="/" aria-label="TruEnroll by Trential, home"><img class="lk-img" src="/assets/brand/truenroll-by-trential.svg" alt="" width="436" height="115"><img class="lk-img lk-dark" src="/assets/brand/truenroll-by-trential-on-dark.svg" alt="" width="436" height="115"></a>
+  <div class="nav-menu" id="nav-menu">
+    <div class="dd">
+      <button class="l dd-t" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dd-services">Services<svg class="dd-ch" aria-hidden="true"><use href="#nv-chevron-down"/></svg></button>
+      <div class="dd-p" id="dd-services"><div class="mega-in">
+        <div class="mg-main"><div class="mg-lab">Services</div><div class="mg-grid"><a class="mg-item" href="/services/evaluation/"><i class="mg-ic t-blue"><svg class="lu" aria-hidden="true"><use href="#nv-file-check"/></svg></i><span><b>Document Evaluation</b><small>Eliminate transfer bottlenecks with instant, policy-specific credit conversion.</small></span></a><a class="mg-item" href="/services/verification/"><i class="mg-ic t-green"><svg class="lu" aria-hidden="true"><use href="#nv-shield-check"/></svg></i><span><b>Document Verification</b><small>Flag font modifications, pixel alterations, and tampered PDF metadata.</small></span></a><a class="mg-item" href="/services/gpa/"><i class="mg-ic t-amber"><svg class="lu" aria-hidden="true"><use href="#nv-calculator"/></svg></i><span><b>GPA Calculator</b><small>Convert international grading scales and credits into policy-accurate 4.0 GPAs.</small></span></a><a class="mg-item" href="/services/automated-transcript-processing/"><i class="mg-ic t-violet"><svg class="lu" aria-hidden="true"><use href="#nv-scan-text"/></svg></i><span><b>Automated Transcript Processing</b><small>Turn hours of manual typing into 3-second, 99.4% accurate extractions.</small></span></a></div></div>
+        <aside class="mg-side"><div class="mg-lab">Featured integrations</div><div class="mg-ints"><a class="mg-int" href="/#integration"><img src="/assets/crm/slate.png" alt=""><b>Slate</b><em class="live">LIVE</em></a><a class="mg-int" href="/#integration"><img src="/assets/crm/salesforce.png" alt=""><b>Salesforce</b><em class="live">LIVE</em></a><a class="mg-int" href="/#integration"><img src="/assets/crm/banner.png" alt=""><b>Banner</b><em class="live">LIVE</em></a><a class="mg-int" href="/#integration"><img src="/assets/crm/peoplesoft.png" alt=""><b>PeopleSoft</b><em class="live">LIVE</em></a></div><a class="mg-more" href="/#integration">See all integrations <svg class="lu-sm" aria-hidden="true"><use href="#nv-arrow-right"/></svg></a><a class="mg-cta" href="/#scheduledemo"><svg class="lu" aria-hidden="true"><use href="#nv-calendar-check"/></svg><span><b>Request a demo</b><small>See TruEnroll in your workflow</small></span><svg class="lu-sm" aria-hidden="true"><use href="#nv-arrow-up-right"/></svg></a></aside>
+      </div></div>
+    </div>
+    <div class="dd">
+      <button class="l dd-t" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dd-resources">Resources<svg class="dd-ch" aria-hidden="true"><use href="#nv-chevron-down"/></svg></button>
+      <div class="dd-p" id="dd-resources"><div class="mega-in">
+        <div class="mg-main"><div class="mg-lab">Resources</div><div class="mg-grid"><a class="mg-item" href="/#integration"><i class="mg-ic t-blue"><svg class="lu" aria-hidden="true"><use href="#nv-blocks"/></svg></i><span><b>Integrations</b><small>Documents go out. Results return to the right application.</small></span></a><a class="mg-item" href="/blogs/"><i class="mg-ic t-amber"><svg class="lu" aria-hidden="true"><use href="#nv-newspaper"/></svg></i><span><b>Blogs</b><small>Guides and insights for admissions and registrar teams.</small></span></a><a class="mg-item" href="/faqs/"><i class="mg-ic t-violet"><svg class="lu" aria-hidden="true"><use href="#nv-circle-help"/></svg></i><span><b>FAQs</b><small>Answers on evaluation time, grading scales, fraud detection and integrations.</small></span></a></div></div>
+        <aside class="mg-side"><div class="mg-lab">Latest from the blog</div><div class="mg-posts"><a class="mg-post" href="https://truenroll.com/blogs/how-registrars-automate-quarter-credit-to-semester-credit-conversion-and-college-credit-transfer"><b>How Registrars Automate Quarter Credit to Semester Credit Conversion and College Credit Transfer</b><small>Oct 7, 2026</small></a><a class="mg-post" href="https://truenroll.com/blogs/what-qualifies-as-an-official-academic-transcript-standards-fraud-detection-for-higher-ed-copy"><b>What Qualifies as an Official Academic Transcript? Standards, Fraud Detection, and Automated Intake for Higher Ed Copy</b><small>Oct 5, 2026</small></a><a class="mg-post" href="https://truenroll.com/blogs/how-can-higher-ed-automate-parchment-transcript-ingestion-into-slate-and-banner"><b>How Can Higher Ed Automate Parchment Transcript Ingestion into Slate and Banner?</b><small>Sep 28, 2026</small></a></div><a class="mg-more" href="/blogs/">See all posts <svg class="lu-sm" aria-hidden="true"><use href="#nv-arrow-right"/></svg></a></aside>
+      </div></div>
+    </div>
+    <a class="l" href="/contact/">Contact us</a>
+    <a class="l signin" href="https://app.truenroll.com">Sign in</a>
+    <a class="btn btn-secondary btn-sm" href="https://app.truenroll.com">Sign up</a>
+    <a class="btn btn-primary btn-sm menu-cta" href="/#scheduledemo">Request a demo</a>
+  </div>
+  <a class="btn btn-primary btn-sm nav-cta" href="/#scheduledemo">Request a demo</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></nav>
+
+<main id="main">
+<link rel="stylesheet" href="/css/wfgallery.css">
+<link rel="stylesheet" href="/css/story.css">
+<section class="hero">
+  <canvas class="dots" data-field="hero" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="eyebrow">AI TRANSCRIPT EVALUATION FOR ADMISSIONS</div>
+    <h1><span class="sr-only">Evaluate transcripts in minutes, not weeks</span><span aria-hidden="true">Evaluate <span class="hw-pill"><span class="hw on">transcripts</span><span class="hw">marksheets</span><span class="hw">credentials</span><span class="hw">applicants</span></span> in minutes, not weeks</span></h1>
+    <p class="lede">TruEnroll reads transcripts in 50+ languages, checks each one for fraud, converts grades and credits to US equivalents, and sends the result to your CRM or SIS.</p>
+    <div class="ctas">
+      <a class="btn btn-primary btn-lg" href="#scheduledemo">Request a demo<span class="b-arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg><svg viewBox="0 0 16 16"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a>
+      <a class="btn btn-secondary btn-lg" href="#story">See how it works</a>
+    </div>
+    <p class="hero-for">Built for admissions offices, registrars and credential evaluators.</p>
+    <div class="portal-wrap">
+      <div class="portal" data-mode="tour" data-chrome data-label="Animated walkthrough of the TruEnroll portal: sign in, candidate list, candidate details, transcript extraction and evaluation"></div>
+      <div class="portal-cap"><span><i></i><span data-portal-cap>Sign in</span></span><span>Live product walkthrough</span></div>
+    </div>
+    <ul class="hero-points">
+      <li class="reveal"><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle pathLength="1" cx="12" cy="12" r="9"/><path class="acc" pathLength="1" d="M12 7v5l3 2"/></svg><p><b>Eliminate evaluation backlogs:</b> Turn multi-week review into same-day decisions.</p></li>
+      <li class="reveal"><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M6 3h8l5 5v13H6z"/><path pathLength="1" d="M14 3v5h5"/><path class="acc" pathLength="1" d="M9 14l2.2 2.2L15 12.5"/></svg><p><b>Audit-ready accuracy:</b> Standardize domestic and global scales the same way every time.</p></li>
+      <li class="reveal"><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M4 6h16M4 12h16M4 18h9"/><path class="acc" pathLength="1" d="M16 15l4 4M20 15l-4 4"/></svg><p><b>Zero manual data entry:</b> Eliminate manual work and spreadsheet errors entirely.</p></li>
+    </ul>
+  </div>
+</section>
+
+<div class="logos"><div class="wrap">
+  <div class="lab">Trusted by</div>
+  <div class="marquee"><ul class="mq-track"><li><img src="/assets/logos/logo-01.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-02.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-03.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-04.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-05.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-06.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-07.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-08.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-09.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-10.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-11.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-12.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-13.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-14.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-15.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-16.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-17.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-18.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-19.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-20.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-21.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-22.png" alt="" loading="lazy"></li></ul><ul class="mq-track" aria-hidden="true"><li><img src="/assets/logos/logo-01.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-02.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-03.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-04.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-05.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-06.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-07.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-08.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-09.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-10.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-11.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-12.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-13.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-14.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-15.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-16.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-17.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-18.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-19.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-20.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-21.png" alt="" loading="lazy"></li><li><img src="/assets/logos/logo-22.png" alt="" loading="lazy"></li></ul></div>
+</div>
+</div></div>
+
+<section class="story" id="story" aria-label="From transcript to verified report">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><filter id="st-paper" x="-6%" y="-6%" width="112%" height="112%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.0035 0.006" numOctaves="1" seed="11" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.45"/></filter></defs></svg>
+  <div class="st-pin">
+    <div class="st-copy"><div class="st-step on" data-i="0"><div class="eyebrow">01 UPLOAD</div><h2>Drop in any transcript.</h2><p>Upload domestic PDFs or foreign marksheets. No templates, no setup.</p><div class="st-hw" aria-hidden="true"><svg viewBox="0 0 90 50"><path pathLength="1" d="M84 10C62 6 34 14 10 36"/><path pathLength="1" d="M10 36l13-3M10 36l3-13"/></svg><span>domestic or foreign</span></div></div><div class="st-step" data-i="1"><div class="eyebrow">02 SCAN</div><h2>Scanned for tampering.</h2><p>TruEnroll scans for altered text, modified PDF coordinates, and unaccredited institution codes.</p><div class="st-hw" aria-hidden="true"><svg viewBox="0 0 90 50"><path pathLength="1" d="M84 10C62 6 34 14 10 36"/><path pathLength="1" d="M10 36l13-3M10 36l3-13"/></svg><span>altered PDFs get flagged</span></div></div><div class="st-step" data-i="2"><div class="eyebrow">03 EXTRACT</div><h2>Extracted into structured fields.</h2><p>AI extraction into structured, reviewable fields. Skewed scans, physical paper, and smartphone uploads work out-of-the-box.</p><div class="st-hw" aria-hidden="true"><svg viewBox="0 0 90 50"><path pathLength="1" d="M84 10C62 6 34 14 10 36"/><path pathLength="1" d="M10 36l13-3M10 36l3-13"/></svg><span>phone photos work too</span></div></div><div class="st-step" data-i="3"><div class="eyebrow">04 TRANSLATE</div><h2>Translated into English.</h2><p>Contextually parses Mandarin, Spanish, Arabic, Hindi, and non-Latin scripts, extracting original course titles alongside English translations.</p><div class="st-hw" aria-hidden="true"><svg viewBox="0 0 90 50"><path pathLength="1" d="M84 10C62 6 34 14 10 36"/><path pathLength="1" d="M10 36l13-3M10 36l3-13"/></svg><span>50+ languages</span></div></div><div class="st-step" data-i="4"><div class="eyebrow">05 STRUCTURE</div><h2>Formed into one clean table.</h2><p>Courses, credits, and grades mapped to CIP and SCED codes, ready for US equivalency.</p><div class="st-hw" aria-hidden="true"><svg viewBox="0 0 90 50"><path pathLength="1" d="M84 10C62 6 34 14 10 36"/><path pathLength="1" d="M10 36l13-3M10 36l3-13"/></svg><span>mapped to CIP and SCED codes</span></div></div><div class="st-step" data-i="5"><div class="eyebrow">06 VERIFY</div><h2>Verified and decision-ready.</h2><p>Click any field to review its exact source location. Audit-ready records, delivered to the right application.</p><div class="st-hw d" aria-hidden="true"><svg viewBox="0 0 64 46"><path pathLength="1" d="M6 8C32 4 52 12 54 38"/><path pathLength="1" d="M54 38l-9-9M54 38l8-10"/></svg><span>click any field to see its source</span></div></div>
+    <div class="st-step" data-i="6"><div class="eyebrow">07 DELIVER</div><h2>Delivered to your CRM or SIS.</h2><p>Results flow from the evaluation engine into the right application, through the native Slate integration or the Partner API.</p><div class="st-hw r" aria-hidden="true"><svg viewBox="0 0 90 50"><path pathLength="1" d="M6 38C30 41 58 33 80 12"/><path pathLength="1" d="M80 12L66.5 15.4M80 12L75.3 25.1"/></svg><span>all four are live</span></div></div></div>
+    <div class="st-stage" role="img" aria-label="A Portuguese transcript is scanned, its data extracted and translated into English, formed into a table, delivered as a verified evaluation report, and sent through an evaluation engine to CRM and SIS connectors.">
+      <div class="st-world" aria-hidden="true">
+        <div class="st-rep">
+        <div class="st-report">
+          <div class="st-rh"><div><span class="st-lab">EVALUATION REPORT</span><b>Ana L. Ferreira</b><small>B.SC. COMPUTER SCIENCE &middot; UNIVERSIDADE DO VALE VERDE</small></div></div>
+          <div class="st-stats">
+            <div class="st-stat"><span>US equivalent GPA</span><b>3.71</b></div>
+            <div class="st-stat"><span>Credits recognized</span><b>121</b></div>
+            <div class="st-stat"><span>Degree equivalent</span><b class="sm">Bachelor's</b></div>
+            <div class="st-stat"><span>Fields traced</span><b>42 / 42</b></div>
+            <div class="st-note"><span class="st-lab">FORENSICS &amp; ACCREDITATION <em>96% CONFIDENCE</em></span><p>Institution recognized. No digital tampering found. One grade-table variation surfaced for reviewer visibility.</p></div>
+          </div>
+          <div class="st-stamp"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21"/><path d="M14 25l7 7 13-15"/></svg><span>VERIFIED</span></div>
+        </div>
+        <div class="st-doc">
+          <div class="st-scan"></div>
+          <i class="st-folds"></i><i class="st-facets"></i>
+          <div class="st-wm" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#uv-crest"/></svg></div>
+          <div class="st-ban">UM HISTÓRICO EM PRETO E BRANCO NÃO É OFICIAL</div>
+          <div class="st-in">
+            <div class="st-dh"><svg class="st-crest" viewBox="0 0 120 120" aria-hidden="true"><use href="#uv-crest"/></svg><div><b>UNIVERSIDADE DO VALE VERDE</b><small>Av. Universitária, 1200 &middot; Vale Verde, Brasil</small></div><span>26/04/2021<br>1 de 2</span></div>
+            <div class="st-dm"><div class="st-kv"><p>Sra. Ana L. Ferreira</p><p>Rua das Acácias, 120</p><p>Vale Verde, Brasil</p></div>
+              <div class="st-kv st-kr"><p><u>Matrícula:</u> 2017.1.0431</p><p><u>Nascimento:</u> 14/03/1998</p><p><u>Curso:</u> Ciência da Computação</p></div>
+              <div class="st-photo"><img src="/assets/img/candidate-ana.jpg" alt="" width="288" height="360"></div></div>
+            <div class="st-dt">
+              <div class="st-r st-th"><span>Código</span><span>Disciplina</span><span>Créd.</span><span>Nota</span></div>
+              <div class="st-term">Período 2017/1</div>
+              <div class="st-r cr"><span>CC101</span><span>Introdução à Computação</span><span>4</span><span>8,5</span></div><div class="st-r cr"><span>CC112</span><span>Estruturas de Dados</span><span>3</span><span>9,3</span></div><div class="st-r cr"><span>MA120</span><span>Álgebra Linear</span><span>3</span><span>7,6</span></div>
+              <div class="st-tot"><span>Totais do período:</span><span>10</span><span>SGPA = 8,47</span></div>
+              <div class="st-tot"><span>Acumulado:</span><span>10</span><span>CGPA = 8,47</span></div>
+              <div class="st-term">Período 2017/2</div>
+              <div class="st-r cr"><span>CC230</span><span>Redes de Computadores</span><span>4</span><span>8,8</span></div><div class="st-r cr"><span>CC240</span><span>Banco de Dados</span><span>4</span><span>8,9</span></div><div class="st-r cr"><span>CC310</span><span>Engenharia de Software</span><span>4</span><span>9,1</span></div>
+              <div class="st-tot"><span>Totais do período:</span><span>12</span><span>SGPA = 8,93</span></div>
+              <div class="st-tot"><span>Acumulado:</span><span>22</span><span>CGPA = 8,72</span></div>
+              <div class="st-faint">(+ 36 disciplinas) &middot; Total: 135 créditos &middot; CGPA final = 8,70</div>
+            </div>
+            <div class="st-sg"><div><svg viewBox="0 0 90 26" aria-hidden="true"><path d="M4 18c6-14 10 4 15-6s6 10 12-2 8 8 14-2 6 6 12 0 8-4 14 2"/></svg><i></i><span>Chefe do Departamento (HoD)</span></div><div><svg viewBox="0 0 90 26" aria-hidden="true"><path d="M5 16c4-10 9 2 13-8 3 10 8 14 14 2s8-6 12 6 10-12 16-4 6 6 14 0"/></svg><i></i><span>Diretor da Faculdade (Dean)</span></div><div><svg viewBox="0 0 90 26" aria-hidden="true"><path d="M6 14c7-12 8 8 15-4s5 12 13 0 8 4 13-4 8 8 14 2 8-2 12 4"/></svg><i></i><span>Secretário Acadêmico</span></div></div>
+            <div class="st-cv"><b>ESCALA DE CONVERSÃO</b><div class="st-cvt"><span>Nota</span><span>9,0–10</span><span>8,0–8,9</span><span>7,0–7,9</span><span>6,0–6,9</span><span>&lt; 6,0</span><span>Conceito</span><span>A</span><span>B</span><span>C</span><span>D</span><span>F</span></div></div>
+          </div>
+          <div class="st-leg">DE ACORDO COM A LGPD, AS INFORMAÇÕES DESTE HISTÓRICO NÃO PODEM SER DIVULGADAS A TERCEIROS SEM O CONSENTIMENTO PRÉVIO DO ALUNO.</div>
+        </div>
+        <div class="st-grp">
+          <div class="st-tcard"><div class="st-thead"><span>Course</span><span>Credits</span><span>Grade</span><span>US eq.</span></div></div>
+          <div class="st-badge"><i>PT</i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg><i>EN</i></div>
+          <div class="st-chip" data-i="0"><b class="st-c0">CC101</b><b class="st-c1" data-pt="Introdução à Computação" data-en="Introduction to Computing">Introdução à Computação</b><b class="st-c2">4</b><b class="st-c3" data-pt="8,5" data-en="8.5">8,5</b><b class="st-c4">A-</b></div><div class="st-chip" data-i="1"><b class="st-c0">CC112</b><b class="st-c1" data-pt="Estruturas de Dados" data-en="Data Structures">Estruturas de Dados</b><b class="st-c2">3</b><b class="st-c3" data-pt="9,3" data-en="9.3">9,3</b><b class="st-c4">A</b></div><div class="st-chip" data-i="2"><b class="st-c0">MA120</b><b class="st-c1" data-pt="Álgebra Linear" data-en="Linear Algebra">Álgebra Linear</b><b class="st-c2">3</b><b class="st-c3" data-pt="7,6" data-en="7.6">7,6</b><b class="st-c4">B</b></div><div class="st-chip" data-i="3"><b class="st-c0">CC230</b><b class="st-c1" data-pt="Redes de Computadores" data-en="Computer Networks">Redes de Computadores</b><b class="st-c2">4</b><b class="st-c3" data-pt="8,8" data-en="8.8">8,8</b><b class="st-c4">A-</b></div><div class="st-chip" data-i="4"><b class="st-c0">CC240</b><b class="st-c1" data-pt="Banco de Dados" data-en="Databases">Banco de Dados</b><b class="st-c2">4</b><b class="st-c3" data-pt="8,9" data-en="8.9">8,9</b><b class="st-c4">A-</b></div><div class="st-chip" data-i="5"><b class="st-c0">CC310</b><b class="st-c1" data-pt="Engenharia de Software" data-en="Software Engineering">Engenharia de Software</b><b class="st-c2">4</b><b class="st-c3" data-pt="9,1" data-en="9.1">9,1</b><b class="st-c4">A</b></div>
+        </div>
+        </div>
+      <svg class="st-wires" viewBox="0 0 1000 640" aria-hidden="true"><path class="st-w" d="M560 320H640C700 320 700 120 760 120H800"/><path class="st-w" d="M560 320H640C700 320 700 250 760 250H800"/><path class="st-w" d="M560 320H640C700 320 700 390 760 390H800"/><path class="st-w" d="M560 320H640C700 320 700 520 760 520H800"/><path class="st-wl" d="M560 320H640C700 320 700 120 760 120H800"/><path class="st-wl" d="M560 320H640C700 320 700 250 760 250H800"/><path class="st-wl" d="M560 320H640C700 320 700 390 760 390H800"/><path class="st-wl" d="M560 320H640C700 320 700 520 760 520H800"/></svg>
+      <div class="st-eng"><svg viewBox="0 0 190 190" aria-hidden="true"><circle class="rg1" cx="95" cy="95" r="82"/><circle class="rg2" cx="95" cy="95" r="66"/><g class="pins"><path d="M72 40v14M95 40v14M118 40v14M72 136v14M95 136v14M118 136v14M40 72h14M40 95h14M40 118h14M136 72h14M136 95h14M136 118h14"/></g><rect class="core" x="54" y="54" width="82" height="82" rx="14"/><rect class="core2" x="70" y="70" width="50" height="50" rx="8"/><path class="mark" d="M82 95h12l5-12 8 24 5-12h4"/></svg><span>EVALUATION ENGINE</span></div><div class="st-crm" style="top:88px"><img src="/assets/crm/slate.png" alt=""><span><b>Slate</b><em class="live">LIVE</em></span><i class="ck"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></div><div class="st-crm" style="top:218px"><img src="/assets/crm/salesforce.png" alt=""><span><b>Salesforce</b><em class="live">LIVE</em></span><i class="ck"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></div><div class="st-crm" style="top:358px"><img src="/assets/crm/peoplesoft.png" alt=""><span><b>Oracle PeopleSoft</b><em class="live">LIVE</em></span><i class="ck"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></div><div class="st-crm" style="top:488px"><img src="/assets/crm/banner.png" alt=""><span><b>Ellucian Banner</b><em class="live">LIVE</em></span><i class="ck"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></div><i class="st-dot st-d0"></i><i class="st-dot"></i><i class="st-dot"></i><i class="st-dot"></i><i class="st-dot"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="transform" id="transformation">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">OPERATIONAL TRANSFORMATION</div><h2>From evaluation backlogs <span class="dim">to instant applicant conversion.</span></h2></div>
+      <p>Eliminate transfer bottlenecks with instant, policy-specific credit conversion.</p>
+    </div>
+    <div class="shift">
+      <article class="pane old" tabindex="0">
+        <img class="art" src="/assets/img/officer-overwhelmed.jpg" alt="An admissions officer holding her head, surrounded by stacks of paper transcripts" loading="lazy">
+        <div class="body">
+          <div class="eyebrow">The legacy bottleneck</div>
+          <div class="big">Weeks of backlog</div>
+          <ol><li><span class="n">01</span><div><h3>Manual calculations</h3><p>Staff waste hours manually converting quarter units to semester hours and recalculating GPAs.</p></div></li><li><span class="n">02</span><div><h3>Conversion inconsistencies</h3><p>Evaluator variation in interpreting Chinese percentage marks or UK Class Honors.</p></div></li><li><span class="n">03</span><div><h3>Lost applicants to competitors</h3><p>Weeks of evaluation backlogs cause admitted students to enroll at faster-responding campuses.</p></div></li></ol>
+        </div>
+      </article>
+      <article class="pane new" tabindex="0">
+        <img class="art" src="/assets/img/officer-happy.jpg" alt="An admissions officer smiling and raising a fist at their laptop in a tidy office" loading="lazy">
+        <div class="body">
+          <div class="eyebrow">The TruEnroll standard</div>
+          <div class="big">Same day decisions</div>
+          <ol><li><span class="n">01</span><div><h3>Automated grade recalculation</h3><p>Automated quarter, CATS, and ECTS normalization per registrar rules.</p></div></li><li><span class="n">02</span><div><h3>150+ pre-set scale rules</h3><p>Audit-ready 4.0 normalization applied consistently across every international transcript.</p></div></li><li><span class="n">03</span><div><h3>Direct CRM synchronization</h3><p>Evaluated equivalencies and GPAs flow directly to Slate and Banner for immediate, decision-ready offer generation.</p></div></li></ol>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="dark band">
+  <canvas class="dots" data-field="band" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <p class="bq reveal">The student you admitted last is already accepting another offer. <span class="dim">Every day of evaluation delay costs up to $<span data-count="11000" data-sep="1">11,000</span> in lost enrollment.</span></p>
+    <a class="btn btn-secondary btn-on-dark reveal" href="#scheduledemo">Cut the backlog to minutes<span class="b-arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg><svg viewBox="0 0 16 16"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a>
+  </div>
+</section>
+
+<section class="dark workflow" id="how">
+  <canvas class="dots" data-field="dark-tr" aria-hidden="true"></canvas>
+  <div class="wf-stage" id="wfs"><div class="wf-pin"><div class="wf-in">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">AUTOMATED WORKFLOW</div><h2>How TruEnroll <span class="dim">processes a transcript.</span></h2></div>
+      <p>From initial document upload to permanent CRM record—zero manual data re-keying required.</p>
+    </div>
+
+  </div>
+
+  <div class="wfg-wrap" id="wfg" aria-roledescription="carousel" aria-label="How TruEnroll processes a transcript">
+    <div class="wfg" tabindex="0">
+      <article class="wf-card on" id="wf-1" data-dur="15000" aria-roledescription="slide" aria-label="1 of 4">
+        <div class="wtext"><div class="eyebrow">01 AI TRANSCRIPT EXTRACTION</div>
+        <h3>Document verification &amp; ingestion.</h3>
+        <p>Upload domestic PDFs or foreign marksheets. TruEnroll scans for altered text, modified PDF coordinates, and unaccredited institution codes.</p>
+        <ul class="checks"><li>AI extraction into structured, reviewable fields</li><li>CIP and SCED course mapping</li><li>Knowledge Hub across 190+ countries</li></ul></div>
+        <div class="wvis"><div class="portal" data-mode="single" data-scenes="extraction" data-view="84 84 680 470" data-label="Extraction review: the transcript is scanned and its fields are filled in with source highlights"></div></div>
+      </article>
+      <article class="wf-card" id="wf-2" data-dur="16000" aria-roledescription="slide" aria-label="2 of 4">
+        <div class="wtext"><div class="eyebrow">02 AI GPA RECALCULATION</div>
+        <h3>Policy-enforced GPA recalculation.</h3>
+        <p>Automatically convert quarter credits to semester hours, drop non-transferable electives, and normalize 150+ international grading scales to their US equivalence.</p>
+        <ul class="checks"><li>Default and fully custom grading scales</li><li>US GPA and credit equivalents</li><li>Consistent results across reviewers</li></ul></div>
+        <div class="wvis"><div class="portal" data-mode="single" data-scenes="evaluation" data-view="92 134 1000 600" data-label="Evaluation: grades are converted, credits counted and the US GPA calculated"></div></div>
+      </article>
+      <article class="wf-card" id="wf-3" data-dur="11000" aria-roledescription="slide" aria-label="3 of 4">
+        <div class="wtext"><div class="eyebrow">03 SOURCE COORDINATE MAPPING</div>
+        <h3>Pixel-level bounding OCR audit.</h3>
+        <p>Evaluators hover over any calculated field in TruEnroll to highlight the exact source coordinate on the original PDF transcript.</p>
+        <ul class="checks"><li>Tamper and manipulation detection</li><li>Institution and accreditation recognition</li><li>Audit-ready fraud detection report</li></ul></div>
+        <div class="wvis"><div class="portal" data-mode="single" data-scenes="extraction" data-variant="map" data-view="92 150 880 620" data-label="Extraction review: each entry field is linked to its exact source on the original transcript"></div></div>
+      </article>
+      <article class="wf-card" id="wf-4" data-dur="11000" aria-roledescription="slide" aria-label="4 of 4">
+        <div class="wtext"><div class="eyebrow">04 AI COURSE EVALUATION</div>
+        <h3>Bi-directional CRM/SIS ingestion</h3>
+        <p>Verified GPAs, course equivalencies, and articulated credits flow directly into target CRM fields in real time.</p>
+        <ul class="checks"><li>US equivalency at individual course level</li><li>Document-by-document mode</li><li>Excel and PDF reports</li></ul></div>
+        <div class="wvis"><div class="portal" data-mode="single" data-scenes="list" data-view="400 150 1040 330" data-label="Candidate list: the evaluated record syncs to the CRM" data-sync></div></div>
+      </article>
+    </div>
+    <div class="wfg-ctl">
+      <div class="wfg-dots"><button type="button" class="wfg-dot on" aria-label="Show step 1: Document verification and ingestion" aria-controls="wf-1"><i></i></button><button type="button" class="wfg-dot" aria-label="Show step 2: Policy-enforced GPA recalculation" aria-controls="wf-2"><i></i></button><button type="button" class="wfg-dot" aria-label="Show step 3: Pixel-level bounding OCR audit" aria-controls="wf-3"><i></i></button><button type="button" class="wfg-dot" aria-label="Show step 4: Bi-directional CRM/SIS ingestion" aria-controls="wf-4"><i></i></button></div>
+      <button type="button" class="wfg-pp" aria-label="Pause autoplay"><svg class="lu pp-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/></svg><svg class="lu pp-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg></button>
+    </div>
+  </div>
+  </div></div></div>
+
+  <div class="wrap">
+    <div class="wend reveal">
+      <p>Turn multi-week transcript backlogs into same-day acceptance offers.</p>
+      <a class="btn btn-secondary btn-on-dark" href="#scheduledemo">Request a demo<span class="b-arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg><svg viewBox="0 0 16 16"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></a>
+    </div>
+    </div>
+</section>
+
+<section class="product">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">PRODUCT EXPERIENCE</div><h2>Built for registrar precision. <span class="dim">Designed for admissions speed.</span></h2></div>
+      <p>A single workspace where evaluators review side-by-side transcript coordinates, automated calculations, and direct CRM sync status.</p>
+    </div>
+    <div class="portal-wrap">
+      <div class="portal-tabs" role="group" aria-label="Portal screens">
+        <button type="button" data-scene-tab="login" aria-pressed="false">Sign in</button>
+        <button type="button" data-scene-tab="list" aria-pressed="false">Candidates</button>
+        <button type="button" data-scene-tab="details" aria-pressed="false">Candidate details</button>
+        <button type="button" data-scene-tab="extraction" aria-pressed="false">Extraction</button>
+        <button type="button" data-scene-tab="evaluation" aria-pressed="false">Evaluation</button>
+      </div>
+      <div class="portal" data-mode="tabs" data-scenes="extraction,login,list,details,evaluation" data-chrome data-label="Interactive tour of the TruEnroll portal screens"></div>
+      <div class="portal-cap"><span><i></i><span data-portal-cap></span></span><span>Pick a screen to replay it</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="roles-sec" id="roles">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">BUILT FOR THE FULL PIPELINE</div><h2>Built for the entire campus. <span class="dim">Tailored for every leader.</span></h2></div>
+    </div>
+    <div class="rgrid">
+      <article class="rcard" tabindex="0"><img class="rphoto" src="/assets/img/role-admissions-vp.jpg" alt="An admissions vice president working at a desk in a university office" width="894" height="600" loading="lazy"><h3>Admissions VPs &amp; Deans</h3><div class="eyebrow">Focus: speed, yield &amp; applicant conversion</div><p>Eliminate evaluation backlogs during peak application surges. Deliver decision-ready credit breakdowns days ahead of competing campuses to secure top transfer candidates.</p></article>
+      <article class="rcard" tabindex="0"><img class="rphoto" src="/assets/img/role-registrar.jpg" alt="A university registrar reviewing a printed transcript at a desk" width="894" height="600" loading="lazy"><h3>Central registrars</h3><div class="eyebrow">Focus: policy control &amp; record integrity</div><p>Enforce grade exclusions, course repetitions, and unit conversions automatically with 100% pixel-level source auditability and 1-click human policy override controls.</p></article>
+      <article class="rcard" tabindex="0"><img class="rphoto" src="/assets/img/role-ciso.jpg" alt="A higher-ed security officer working at a laptop with dashboards on two monitors" width="894" height="600" loading="lazy"><h3>Higher-ed IT &amp; CISOs</h3><div class="eyebrow">Focus: FERPA sovereignty &amp; zero-risk AI</div><p>Ensure complete student PII protection with cryptographically isolated cloud boundaries, SOC 2 Type 2 controls, and zero public AI model retraining guarantees.</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="stats"><div class="wrap">
+  <div class="stat"><b><span data-count="90">90</span>%</b><p class="scap">Decrease in peak evaluation backlogs</p></div>
+  <div class="stat"><b><span data-count="150">150</span>+</b><p class="scap">Pre-configured global grading systems</p></div>
+  <div class="stat"><b><span data-count="100">100</span>%</b><p class="scap">Direct ingestion to Slate &amp; other CRMs</p></div>
+  <div class="stat"><b><span data-count="35">35</span>+ mins</b><p class="scap">Staff time saved per transcript file</p></div>
+</div></div>
+
+<section id="integration">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">AI IN YOUR EXISTING WORKFLOW</div><h2>Results land <span class="dim">in your CRM.</span></h2></div>
+      <p>Documents go out. AI-powered evaluation and verification results return to the right application.</p>
+    </div>
+    <div class="layer">
+      <div class="layer-core">
+        <div class="orb" aria-hidden="true">
+          <i class="orb-glow"></i><i class="orb-rip"></i><i class="orb-rip r2"></i>
+          <div class="orb-b"><i class="orb-body"></i>
+            <div class="globe"><b class="mr m1"></b><b class="mr m2"></b><b class="mr m3"></b><b class="lt l0"></b><b class="lt l1"></b><b class="lt l2"></b></div>
+            <i class="orb-core"></i>
+          </div>
+          <span class="sat s1"><i></i></span><span class="sat s2"><i></i></span><span class="sat s3"><i></i></span>
+        </div>
+        <div class="lc-txt"><span class="lc-lab">AI CREDENTIAL LAYER</span><span class="lc-st" data-steps="Reading the transcript|Checking for tampering|Converting to US equivalents|Sending results to your CRM">Reading the transcript</span></div>
+      </div>
+      <div class="layer-nodes">
+        <div class="node live"><img class="nlogo" src="/assets/crm/slate.png" alt="" loading="lazy"><b>Slate</b><span>Admissions CRM</span><em>LIVE</em></div>
+        <div class="node live"><img class="nlogo" src="/assets/crm/salesforce.png" alt="" loading="lazy"><b>Salesforce</b><span>Education CRM</span><em>LIVE</em></div>
+        <div class="node live"><img class="nlogo" src="/assets/crm/peoplesoft.png" alt="" loading="lazy"><b>Oracle PeopleSoft</b><span>Campus Solutions</span><em>LIVE</em></div>
+        <div class="node live"><img class="nlogo" src="/assets/crm/banner.png" alt="" loading="lazy"><b>Ellucian Banner</b><span>Banner and Recruit</span><em>LIVE</em></div>
+      </div>
+    </div>
+    <table class="tbl">
+      <tbody>
+        <tr><td><span class="lslot"><img src="/assets/crm/slate.png" alt="" loading="lazy"></span>Slate</td><td><span class="st live">LIVE</span></td><td>Attach the evaluation and source evidence to the right application.</td></tr>
+        <tr><td><span class="lslot"><img src="/assets/crm/salesforce.png" alt="" loading="lazy"></span>Salesforce</td><td><span class="st live">LIVE</span></td><td>Return evaluation results to the applicant record inside Salesforce.</td></tr>
+        <tr><td><span class="lslot"><img src="/assets/crm/peoplesoft.png" alt="" loading="lazy"></span>Oracle PeopleSoft</td><td><span class="st live">LIVE</span></td><td>Exchange files using your application and student identifiers.</td></tr>
+        <tr><td><span class="lslot"><img src="/assets/crm/banner.png" alt="" loading="lazy"></span>Ellucian Banner</td><td><span class="st live">LIVE</span></td><td>Return results to Banner or Recruit inside the existing case.</td></tr>
+        <tr class="api"><td>Need a different CRM or SIS?</td><td colspan="2">Use the Partner API to submit cases, retrieve evaluation results, and receive webhooks across the credential lifecycle. <a class="link" href="https://docs.truenroll.com">Explore the partner API</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="dark sec" id="security">
+  <canvas class="dots" data-field="dark-bl" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">CISO &amp; IT PROCUREMENT</div><h2>Zero IT friction. <span class="dim">Instant CISO clearance.</span></h2></div>
+      <p>Pre-completed HECVAT documentation, SOC 2 Type 2 audits, and cryptographically isolated student PII built to pass university IT review in days.</p>
+    </div>
+    <div class="certs certs-logos" role="list" aria-label="Certifications and compliance"><span role="listitem"><img src="/assets/certs/iso-27701.png" alt="ISO 27701" loading="lazy"></span><span role="listitem"><img src="/assets/certs/soc2-type2.png" alt="SOC 2 Type 2" loading="lazy"></span><span role="listitem"><img src="/assets/certs/iso-27001.png" alt="ISO 27001" loading="lazy"></span><span role="listitem"><img src="/assets/certs/ferpa.png" alt="FERPA" loading="lazy"></span><span role="listitem"><img src="/assets/certs/gdpr.png" alt="GDPR" loading="lazy"></span><span role="listitem"><img src="/assets/certs/ccpa.svg" alt="CCPA" loading="lazy"></span><span role="listitem"><img src="/assets/certs/hecvat.svg" alt="HECVAT" loading="lazy"></span></div>
+    <div class="sgrid3">
+      <div class="sblock"><span class="n">01</span><h3>Student data sovereignty</h3>
+        <p><b>Strict FERPA isolation:</b> Student PII is cryptographically separated within dedicated tenant boundaries.</p>
+        <p><b>Field-level RBAC:</b> Granular staff permissions restrict transcript viewing based on registrar role.</p></div>
+      <div class="sblock"><span class="n">02</span><h3>Zero AI model retraining</h3>
+        <p><b>No public model retraining:</b> Transcript data is never used to train or fine-tune public AI models.</p>
+        <p><b>US sovereign hosting:</b> 100% of data processing and storage resides in high-availability US cloud nodes.</p></div>
+      <div class="sblock"><span class="n">03</span><h3>Expedited IT clearance</h3>
+        <p><b>Pre-completed HECVAT:</b> Complete higher-ed security documentation ready for immediate IT download.</p>
+        <p><b>AES-256 encryption:</b> End-to-end cryptographic protection in transit (TLS 1.3) and at rest.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">FREQUENTLY ASKED</div><h2>The questions teams ask <span class="dim">before moving faster.</span></h2></div>
+      <p>Clear answers regarding policy enforcement, system integration, and security compliance.</p>
+    </div>
+    <div class="faq">
+      <details open><summary>What is credential evaluation, and how does TruEnroll automate it?</summary><p>Credential evaluation converts academic records from any education system into standardized US equivalents. TruEnroll reads transcripts in 50+ languages, extracts courses, credits, and grades, normalizes them to a US GPA and credit equivalency, checks each document for fraud, and returns a structured result in minutes instead of days.</p></details>
+      <details><summary>Do you handle domestic transfer credit as well as international evaluation?</summary><p>Yes. TruEnroll supports both international credential evaluation and US domestic transfer credit articulation, mapping incoming coursework to your program requirements so transfer decisions are fast and consistent.</p></details>
+      <details><summary>What is primary source verification, and which countries do you cover?</summary><p>Primary source verification confirms a credential directly against the issuing authority or official record. TruEnroll supports primary source verification across India, China, Nigeria, and other geographies.</p></details>
+      <details><summary>Course-by-course or document-by-document: what is the difference?</summary><p>Course-by-course evaluation breaks a transcript into individual courses with US credit and grade equivalents. Document-by-document evaluation assesses each credential as a whole when a full course breakdown is not required.</p></details>
+      <details><summary>How does TruEnroll detect fraudulent or tampered documents?</summary><p>Every document receives an automated forensics audit that detects tampering, manipulation, and inconsistencies, alongside institution and accreditation checks. Altered transcripts and unrecognized schools are flagged before a decision.</p></details>
+      <details><summary>Does TruEnroll integrate with Slate and other CRMs?</summary><p>Yes. TruEnroll has native integrations with Slate, Salesforce, Oracle PeopleSoft Campus Solutions, and Ellucian Banner / Recruit, and a Partner API to connect with any other CRM or SIS.</p></details>
+      <details><summary>Is TruEnroll secure and compliant?</summary><p>TruEnroll is built for strict data environments with ISO 27001, SOC 2 Type 2, and ISO 27701 certifications and FERPA, CCPA, and GDPR compliance, plus automated audit trails, role-based access, and encryption at every step.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="scheduledemo">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">SEE THE AI CO-PILOT ON A REAL CASE</div>
+      <h2>See your transcript <span class="dim">evaluated live.</span></h2>
+      <p class="lede">Bring a real transcript. We'll run the full AI pipeline and show the result in Slate.</p>
+    </div>
+    <form class="form" data-form data-endpoint="" novalidate>
+  <div class="form-body">
+    <div class="field"><label><span>Full name</span><input name="name" autocomplete="name" placeholder="Jordan Lee" required></label><p class="err" data-for="name" role="alert"></p></div>
+    <div class="field"><label><span>Work email</span><input name="email" type="email" autocomplete="email" placeholder="name@university.edu" required></label><p class="err" data-for="email" role="alert"></p></div>
+    <div class="field"><label><span>University</span><input name="institution" autocomplete="organization" placeholder="University name" required></label><p class="err" data-for="institution" role="alert"></p></div>
+    <div class="field"><label><span>Annual volume</span><select name="volume" required><option value="">Select volume</option><option>Under 500 applications/year</option><option>500-2,500 applications/year</option><option>2,500-10,000 applications/year</option><option>10,000+ applications/year</option></select></label><p class="err" data-for="volume" role="alert"></p></div>
+    <button class="btn btn-primary btn-block" type="submit" data-state="idle">Request a demo<span class="b-arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg><svg viewBox="0 0 16 16"><path d="M3 8h9M8.5 4l4 4-4 4"/></svg></span></button>
+    <p class="form-note">Review our <a href="https://trential.com/legal/truenroll-privacy-policy">privacy policy</a> and <a href="https://trential.com/legal/truenroll-terms-and-conditions">terms</a>.</p>
+  </div>
+  <div class="form-done" hidden tabindex="-1">
+    <svg class="done-ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" pathLength="1"/><path d="M14 25l7 7 13-15" pathLength="1"/></svg>
+    <p class="done-title" data-ui-copy>Thank you</p>
+    <p data-ui-copy>Your request has been received. We'll be in touch to schedule your live demo.</p>
+  </div>
+</form>
+
+  </div>
+</section>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is credential evaluation, and how does TruEnroll automate it?", "acceptedAnswer": {"@type": "Answer", "text": "Credential evaluation converts academic records from any education system into standardized US equivalents. TruEnroll reads transcripts in 50+ languages, extracts courses, credits, and grades, normalizes them to a US GPA and credit equivalency, checks each document for fraud, and returns a structured result in minutes instead of days."}}, {"@type": "Question", "name": "Do you handle domestic transfer credit as well as international evaluation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. TruEnroll supports both international credential evaluation and US domestic transfer credit articulation, mapping incoming coursework to your program requirements so transfer decisions are fast and consistent."}}, {"@type": "Question", "name": "What is primary source verification, and which countries do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "Primary source verification confirms a credential directly against the issuing authority or official record. TruEnroll supports primary source verification across India, China, Nigeria, and other geographies."}}, {"@type": "Question", "name": "Course-by-course or document-by-document: what is the difference?", "acceptedAnswer": {"@type": "Answer", "text": "Course-by-course evaluation breaks a transcript into individual courses with US credit and grade equivalents. Document-by-document evaluation assesses each credential as a whole when a full course breakdown is not required."}}, {"@type": "Question", "name": "How does TruEnroll detect fraudulent or tampered documents?", "acceptedAnswer": {"@type": "Answer", "text": "Every document receives an automated forensics audit that detects tampering, manipulation, and inconsistencies, alongside institution and accreditation checks. Altered transcripts and unrecognized schools are flagged before a decision."}}, {"@type": "Question", "name": "Does TruEnroll integrate with Slate and other CRMs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. TruEnroll has native integrations with Slate, Salesforce, Oracle PeopleSoft Campus Solutions, and Ellucian Banner / Recruit, and a Partner API to connect with any other CRM or SIS."}}, {"@type": "Question", "name": "Is TruEnroll secure and compliant?", "acceptedAnswer": {"@type": "Answer", "text": "TruEnroll is built for strict data environments with ISO 27001, SOC 2 Type 2, and ISO 27701 certifications and FERPA, CCPA, and GDPR compliance, plus automated audit trails, role-based access, and encryption at every step."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "TruEnroll", "url": "https://truenroll.com", "logo": "https://truenroll.com/assets/truenroll-logo.svg", "parentOrganization": {"@type": "Organization", "name": "Trential"}}</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="lu-zap" viewBox="0 0 24 24"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></symbol><symbol id="lu-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /> <path d="M2 12h20" /></symbol><symbol id="lu-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol><symbol id="lu-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></symbol><symbol id="lu-arrow-right-left" viewBox="0 0 24 24"><path d="m16 3 4 4-4 4" /> <path d="M20 7H4" /> <path d="m8 21-4-4 4-4" /> <path d="M4 17h16" /></symbol><symbol id="lu-clipboard-list" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /> <path d="M12 11h4" /> <path d="M12 16h4" /> <path d="M8 11h.01" /> <path d="M8 16h.01" /></symbol><symbol id="lu-scale" viewBox="0 0 24 24"><path d="M12 3v18" /> <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /> <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M7 21h10" /></symbol><symbol id="lu-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /> <path d="M9 18h6" /> <path d="M10 22h4" /></symbol><symbol id="lu-layout-panel-left" viewBox="0 0 24 24"><rect width="7" height="18" x="3" y="3" rx="1" /> <rect width="7" height="7" x="14" y="3" rx="1" /> <rect width="7" height="7" x="14" y="14" rx="1" /></symbol><symbol id="lu-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <path d="M16 3.128a4 4 0 0 1 0 7.744" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <circle cx="9" cy="7" r="4" /></symbol><symbol id="lu-layout-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1" /> <rect width="7" height="7" x="14" y="3" rx="1" /> <rect width="7" height="7" x="14" y="14" rx="1" /> <rect width="7" height="7" x="3" y="14" rx="1" /></symbol><symbol id="lu-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></symbol><symbol id="lu-code-xml" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4" /> <path d="m6 8-4 4 4 4" /> <path d="m14.5 4-5 16" /></symbol><symbol id="lu-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3" /> <path d="M3 5V19A9 3 0 0 0 21 19V5" /> <path d="M3 12A9 3 0 0 0 21 12" /></symbol><symbol id="lu-user-plus" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <line x1="19" x2="19" y1="8" y2="14" /> <line x1="22" x2="16" y1="11" y2="11" /></symbol><symbol id="lu-bell" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0" /> <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /></symbol><symbol id="lu-settings" viewBox="0 0 24 24"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" /> <circle cx="12" cy="12" r="3" /></symbol><symbol id="lu-crown" viewBox="0 0 24 24"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" /> <path d="M5 21h14" /></symbol><symbol id="lu-monitor-play" viewBox="0 0 24 24"><path d="M15.033 9.44a.647.647 0 0 1 0 1.12l-4.065 2.352a.645.645 0 0 1-.968-.56V7.648a.645.645 0 0 1 .967-.56z" /> <path d="M12 17v4" /> <path d="M8 21h8" /> <rect x="2" y="3" width="20" height="14" rx="2" /></symbol><symbol id="lu-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol><symbol id="lu-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34" /> <circle cx="11" cy="11" r="8" /></symbol><symbol id="lu-plus" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="M12 5v14" /></symbol><symbol id="lu-chevrons-up-down" viewBox="0 0 24 24"><path d="m7 15 5 5 5-5" /> <path d="m7 9 5-5 5 5" /></symbol><symbol id="lu-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /> <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></symbol><symbol id="lu-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <path d="M12 16v-4" /> <path d="M12 8h.01" /></symbol><symbol id="lu-ellipsis" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1" /> <circle cx="19" cy="12" r="1" /> <circle cx="5" cy="12" r="1" /></symbol><symbol id="lu-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7" /> <path d="M19 12H5" /></symbol><symbol id="lu-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol><symbol id="lu-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="m19 9-5 5-4-4-3 3" /></symbol><symbol id="lu-message-square" viewBox="0 0 24 24"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /></symbol><symbol id="lu-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></symbol><symbol id="lu-triangle-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /> <path d="M12 9v4" /> <path d="M12 17h.01" /></symbol><symbol id="lu-sparkles" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /></symbol><symbol id="lu-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol><symbol id="lu-maximize" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3" /> <path d="M21 8V5a2 2 0 0 0-2-2h-3" /> <path d="M3 16v3a2 2 0 0 0 2 2h3" /> <path d="M16 21h3a2 2 0 0 0 2-2v-3" /></symbol><symbol id="lu-zoom-in" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" /> <line x1="21" x2="16.65" y1="21" y2="16.65" /> <line x1="11" x2="11" y1="8" y2="14" /> <line x1="8" x2="14" y1="11" y2="11" /></symbol><symbol id="lu-zoom-out" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" /> <line x1="21" x2="16.65" y1="21" y2="16.65" /> <line x1="8" x2="14" y1="11" y2="11" /></symbol><symbol id="lu-download" viewBox="0 0 24 24"><path d="M12 15V3" /> <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <path d="m7 10 5 5 5-5" /></symbol><symbol id="lu-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol><symbol id="lu-book-open-check" viewBox="0 0 24 24"><path d="M12 5v16" /> <path d="m16 12 2 2 4-4" /> <path d="M22 6V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2h4.001A2 2 0 0022 17v-1.344" /></symbol><symbol id="lu-save" viewBox="0 0 24 24"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" /> <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7" /> <path d="M7 3v4a1 1 0 0 0 1 1h7" /></symbol><symbol id="lu-rotate-ccw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /> <path d="M3 3v5h5" /></symbol><symbol id="lu-pencil" viewBox="0 0 24 24"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /> <path d="m15 5 4 4" /></symbol><symbol id="lu-book-open" viewBox="0 0 24 24"><path d="M12 5v16" /> <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></symbol><symbol id="lu-panel-right" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" /> <path d="M15 3v18" /></symbol><symbol id="lu-circle-minus" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <path d="M8 12h8" /></symbol><symbol id="lu-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <path d="m16 9-5.5 5.5L8 12" /></symbol><symbol id="lu-file-check" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="m9 15 2 2 4-4" /></symbol></defs></svg>
+<!-- Source for src/partials/portal-tpl.html. Run: python3 scripts/gen-portal.py
+     Double-bracket tokens are Lucide icons (assets/vendor/lucide, ISC license). All people and institutions are fictional. -->
+<template id="portal-tpl">
+<div class="p-stage" aria-hidden="true">
+
+  <!-- LOGIN -->
+  <section class="p-scene p-login" data-scene="login">
+    <div class="pl-left">
+      <video class="pl-bg" muted loop playsinline preload="none" tabindex="-1" data-src="/assets/video/login-bg.mp4"></video>
+      <img class="pl-logo" src="/assets/truenroll-logo.svg" alt="">
+      <h3>Credential Evaluation Platform,<br>engineered for <em>accuracy.</em></h3>
+      <p class="pl-sub">AI-powered platform to evaluate transcripts across 190+ education systems</p>
+      <ul class="pl-feat">
+        <li><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-zap"/></svg><div><b>Lightning fast processing</b><span>Process transcripts in minutes with AI automation</span></div></li>
+        <li><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-globe"/></svg><div><b>Global Coverage</b><span>Supports 190+ education systems and grading scale</span></div></li>
+        <li><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-shield-check"/></svg><div><b>Trusted by experts</b><span>Built for universities and credential evaluators</span></div></li>
+      </ul>
+      <div class="pl-badges"><span><i class="bd b1">GDPR</i>GDPR<br>Compliant</span><span><i class="bd b2">SOC 2</i>SOC 2<br>Type II</span><span><i class="bd b3">FERPA</i>FERPA<br>Compliant</span></div>
+    </div>
+    <div class="pl-right">
+      <form class="pl-form">
+        <h4>Welcome</h4>
+        <p class="pl-c">Continue to start transcript evaluation</p>
+        <div class="sh-btn sh-outline pl-sso"><b class="g">G</b>Sign in with Google</div>
+        <div class="sh-btn sh-outline pl-sso"><i class="ms"></i>Sign in with Microsoft</div>
+        <div class="pl-or"><span>Or use your email</span></div>
+        <label>Email address</label>
+        <div class="sh-input pl-in" data-t="login-email"><span class="ph">you@university.edu</span><span class="tx"></span></div>
+        <div class="sh-btn sh-primary pl-go" data-t="login-go">Continue</div>
+      </form>
+      <div class="pl-legal">By continuing you agree to the <u>Terms &amp; Conditions</u> and <u>Privacy Statement</u><br><span>Powered by <strong>trential</strong></span></div>
+    </div>
+  </section>
+
+  <!-- APP SHELL -->
+  <div class="p-app">
+    <aside class="p-side">
+      <b class="t">t</b>
+      <div class="sg"><i><svg class="lu" aria-hidden="true"><use href="#lu-file-text"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-arrow-right-left"/></svg></i></div>
+      <div class="sg"><i><svg class="lu" aria-hidden="true"><use href="#lu-globe"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-clipboard-list"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-scale"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-lightbulb"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-layout-panel-left"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-users"/></svg></i></div>
+      <div class="sg"><i><svg class="lu" aria-hidden="true"><use href="#lu-layout-grid"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-cloud"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-code-xml"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-database"/></svg></i></div>
+      <div class="sg"><i><svg class="lu" aria-hidden="true"><use href="#lu-user-plus"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-bell"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-settings"/></svg></i></div>
+    </aside>
+    <header class="p-top">
+      <div class="pt-prog"><span class="sh-progress"><b></b></span><small>4/5 candidates added</small></div>
+      <div class="pt-up"><svg class="lu" aria-hidden="true"><use href="#lu-crown"/></svg>Upgrade</div>
+      <div class="pt-tour">Product tour<svg class="lu" aria-hidden="true"><use href="#lu-monitor-play"/></svg></div>
+      <div class="pt-bell"><svg class="lu" aria-hidden="true"><use href="#lu-bell"/></svg><em>3</em></div>
+      <div class="pt-av"><span class="sh-avatar">CN</span><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></div>
+    </header>
+
+    <!-- LIST -->
+    <section class="p-scene p-list" data-scene="list">
+      <div class="pls-bar">
+        <div class="sh-input pls-search"><svg class="lu" aria-hidden="true"><use href="#lu-search"/></svg>Search for candidate or case ID</div>
+        <div class="sh-btn sh-outline pls-f">Filter<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></div>
+        <div class="sh-btn sh-outline pls-e">Export as CSV</div>
+        <div class="sh-btn sh-primary pls-add"><svg class="lu" aria-hidden="true"><use href="#lu-plus"/></svg>Add Candidate</div>
+      </div>
+      <div class="pls-tot"><b>Total: 30</b><div class="sh-btn sh-outline sh-sm">Columns<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></div></div>
+      <div class="pls-tbl sh-table">
+        <div class="pls-row pls-h"><span>Case ID</span><span>Uploaded at <svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevrons-up-down"/></svg></span><span>Candidate</span><span>State</span><span>Modified at <svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevrons-up-down"/></svg></span><span>Assignee</span><span>Action to be done</span></div>
+        <div class="pls-row hi"><span><svg class="lu" aria-hidden="true"><use href="#lu-link"/></svg><b>5683XX</b></span><span><b>9:20 PM</b><small>Today</small></span><span><b>Ana L. Ferreira</b></span><span><i class="sh-select">To do<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span><b>1:20 PM</b><small>Today</small></span><span><i class="sh-select">Dana<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="act"><b class="a1">Document ready. Please review</b><b class="a2">Synced to Slate</b><em><svg class="lu" aria-hidden="true"><use href="#lu-info"/></svg><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></em></span></div>
+        <div class="pls-row"><span><svg class="lu" aria-hidden="true"><use href="#lu-link"/></svg>3483YU</span><span>1:20 PM<small>Yesterday</small></span><span>Lucas Moreau</span><span><i class="sh-select">To do<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span>1:20 PM<small>Today</small></span><span><i class="sh-select">Dana<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="act"><b>Insufficiency raised. Please resolve</b><em><svg class="lu" aria-hidden="true"><use href="#lu-info"/></svg><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></em></span></div>
+        <div class="pls-row"><span><svg class="lu" aria-hidden="true"><use href="#lu-link"/></svg>9083HJ</span><span>1:20 PM<small>Yesterday</small></span><span>Priya Nair</span><span><i class="sh-select">To do<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span>1:20 PM<small>Today</small></span><span><i class="sh-select">Jordan<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="act"><em><svg class="lu" aria-hidden="true"><use href="#lu-info"/></svg><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></em></span></div>
+        <div class="pls-row"><span><svg class="lu" aria-hidden="true"><use href="#lu-link"/></svg>4586WE</span><span>8:20 PM<small>Yesterday</small></span><span>Hiro Tanaka</span><span><i class="sh-select">To do<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span>1:20 PM<small>Yesterday</small></span><span><i class="sh-select">Riley<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="act"><em><svg class="lu" aria-hidden="true"><use href="#lu-info"/></svg><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></em></span></div>
+        <div class="pls-row"><span><svg class="lu" aria-hidden="true"><use href="#lu-link"/></svg>7883BI</span><span>1:55 PM<small>07/01/2025</small></span><span>Sofia Marin</span><span><i class="sh-select">To do<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span>1:20 PM<small>Today</small></span><span><i class="sh-select">Jordan<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="act"><em><svg class="lu" aria-hidden="true"><use href="#lu-info"/></svg><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></em></span></div>
+        <div class="pls-row"><span><svg class="lu" aria-hidden="true"><use href="#lu-link"/></svg>2291KD</span><span>1:55 PM<small>06/07/2025</small></span><span>Omar Haddad</span><span><i class="sh-select">To do<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span>1:20 PM<small>Today</small></span><span><i class="sh-select">Jordan<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="act"><em><svg class="lu" aria-hidden="true"><use href="#lu-info"/></svg><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></em></span></div>
+      </div>
+    </section>
+
+    <!-- CANDIDATE DETAILS -->
+    <section class="p-scene p-det" data-scene="details">
+      <div class="crumb"><i class="bk"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-arrow-left"/></svg></i><div><p><span>Candidates</span><svg class="lu" aria-hidden="true"><use href="#lu-chevron-right"/></svg><b>Candidate Details</b></p><small>Last edited: <b>Thu, May 22, 2025</b><span>Case ID: <b>43JWI</b><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-link"/></svg></span></small></div>
+        <div class="crumb-r"><span class="sh-btn sh-outline"><svg class="lu" aria-hidden="true"><use href="#lu-file-text"/></svg>Download Report</span><span class="sh-btn sh-outline sh-icon"><svg class="lu" aria-hidden="true"><use href="#lu-chart-line"/></svg></span><span class="sh-btn sh-outline sh-icon"><svg class="lu" aria-hidden="true"><use href="#lu-message-square"/></svg></span></div></div>
+      <div class="pd-card sh-card">
+        <div class="pd-h"><svg class="lu" aria-hidden="true"><use href="#lu-user"/></svg>Candidate Details</div>
+        <div class="pd-f">
+          <label>Full Name</label><div class="sh-input sh-select-in">Ana L. Ferreira<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></div><i class="warn"><svg class="lu" aria-hidden="true"><use href="#lu-triangle-alert"/></svg></i><label>Type</label><div class="sh-input">Self Upload</div><span></span><label>Date of Birth</label><div class="sh-input">14/03/1998</div>
+          <label>Email ID</label><div class="sh-input">ana.ferreira@example.com</div><span></span><label>Contact Number</label><div class="sh-input">+1 (555) 010 0142</div>
+        </div>
+      </div>
+      <div class="pd-tabs"><div class="sh-tabs"><span>Uploaded Documents</span><b>Processed Documents</b></div><div class="sh-btn sh-outline"><svg class="lu" aria-hidden="true"><use href="#lu-plus"/></svg>Add Documents</div></div>
+      <div class="pd-tbl sh-table">
+        <div class="pd-r pd-hd"><span>Uploaded at</span><span>Education Level</span><span>Document</span><span>Issues <u><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-sparkles"/></svg>AI powered</u><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-info"/></svg></span><span>Status <svg class="lu lu-sm" aria-hidden="true"><use href="#lu-info"/></svg></span><span></span></div>
+        <div class="pd-r"><span>3:50 PM<small>Today</small></span><span><i class="sh-select">Post graduation<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="chips"><i class="sh-badge">Degree<svg class="lu lu-xs" aria-hidden="true"><use href="#lu-x"/></svg></i><i class="sh-badge">Marksheet<svg class="lu lu-xs" aria-hidden="true"><use href="#lu-x"/></svg></i><i class="sh-btn sh-outline sh-icon sh-xs"><svg class="lu" aria-hidden="true"><use href="#lu-plus"/></svg></i></span><span class="iss"><em class="sh-badge b-o">LoA required</em><em class="sh-badge b-o">Blurred degree</em></span><span class="stat">Ready for review</span><span class="ev"><b><svg class="lu" aria-hidden="true"><use href="#lu-sparkles"/></svg>Evaluate</b><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></span></div>
+        <div class="pd-r"><span>3:50 PM<small>Today</small></span><span><i class="sh-select">Graduation<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="chips"><i class="sh-badge">Degree<svg class="lu lu-xs" aria-hidden="true"><use href="#lu-x"/></svg></i><i class="sh-badge">Marksheet<svg class="lu lu-xs" aria-hidden="true"><use href="#lu-x"/></svg></i><i class="sh-btn sh-outline sh-icon sh-xs"><svg class="lu" aria-hidden="true"><use href="#lu-plus"/></svg></i></span><span class="iss"><em class="sh-badge b-n">Institution verified</em><em class="sh-badge b-o">Grade table variation</em></span><span class="stat">Ready for review</span><span class="ev"><b data-t="ev2"><svg class="lu" aria-hidden="true"><use href="#lu-sparkles"/></svg>Evaluate</b><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></span></div>
+        <div class="pd-r"><span>3:50 PM<small>Today</small></span><span><i class="sh-select">Senior secondary<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="chips"><i class="sh-badge">Marksheet<svg class="lu lu-xs" aria-hidden="true"><use href="#lu-x"/></svg></i><i class="sh-btn sh-outline sh-icon sh-xs"><svg class="lu" aria-hidden="true"><use href="#lu-plus"/></svg></i></span><span class="iss"><em class="sh-badge b-n">No errors</em></span><span class="stat">Ready for review</span><span class="ev"><b><svg class="lu" aria-hidden="true"><use href="#lu-sparkles"/></svg>Evaluate</b><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></span></div>
+        <div class="pd-r"><span>3:50 PM<small>Today</small></span><span><i class="sh-select">Secondary<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></i></span><span class="chips"><i class="sh-badge">Marksheet<svg class="lu lu-xs" aria-hidden="true"><use href="#lu-x"/></svg></i><i class="sh-btn sh-outline sh-icon sh-xs"><svg class="lu" aria-hidden="true"><use href="#lu-plus"/></svg></i></span><span class="iss"><em class="sh-badge b-o">Blurred marksheet</em></span><span class="stat">Ready for review</span><span class="ev"><b><svg class="lu" aria-hidden="true"><use href="#lu-sparkles"/></svg>Evaluate</b><svg class="lu" aria-hidden="true"><use href="#lu-ellipsis"/></svg></span></div>
+      </div>
+    </section>
+
+    <!-- EXTRACTION -->
+    <section class="p-scene p-ext" data-scene="extraction">
+      <div class="crumb"><i class="bk"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-arrow-left"/></svg></i><div><p><span>Candidates</span><svg class="lu" aria-hidden="true"><use href="#lu-chevron-right"/></svg><span>Candidate Details</span><svg class="lu" aria-hidden="true"><use href="#lu-chevron-right"/></svg><b>Document Extraction Review</b></p><small>Last edited: <b>Thu, May 22, 2025</b><span>Case ID: <b>43JWI</b><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-link"/></svg></span></small></div>
+        <div class="legend"><span><i class="lr"></i>Review field</span><span><i class="le"></i>Edited field</span><span><i class="ls"></i>Selected field</span></div></div>
+      <div class="pe-doc">
+        <div class="pe-tools"><i><svg class="lu" aria-hidden="true"><use href="#lu-maximize"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-zoom-in"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-zoom-out"/></svg></i><i><svg class="lu" aria-hidden="true"><use href="#lu-download"/></svg></i></div>
+        <div class="doc">
+          <div class="scan"></div>
+          <div class="d-wm" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#uv-crest"/></svg></div>
+          <div class="d-ban">UM HISTÓRICO EM PRETO E BRANCO NÃO É OFICIAL</div>
+          <div class="d-in">
+            <div class="d-head" data-d="inst"><svg class="d-crest" viewBox="0 0 120 120" aria-hidden="true"><use href="#uv-crest"/></svg><div><b>UNIVERSIDADE DO VALE VERDE</b><small>Av. Universitária, 1200 · Vale Verde, Brasil</small></div><span>26/04/2021<br>1 de 2</span></div>
+            <div class="d-tt"><b>HISTÓRICO ESCOLAR</b><small>Secretaria Acadêmica</small></div>
+            <div class="d-meta"><div class="d-kv">
+              <p data-d="name"><u>Aluno(a):</u> Ana L. Ferreira</p>
+              <p data-d="dob"><u>Nascimento:</u> 14/03/1998 <u>País:</u> <span data-d="country">Brasil</span></p>
+              <p data-d="deg"><u>Curso:</u> Bacharelado em Ciência da Computação</p>
+              <p data-d="year"><u>Ingresso:</u> 2017/1 <u>Conclusão:</u> 2021/2 <u>Colação:</u> 15/12/2021</p></div>
+              <div class="d-photo"><img src="/assets/img/candidate-ana.jpg" alt="" width="288" height="360"></div></div>
+            <div class="d-tbl">
+              <div class="th"><span>Código</span><span>Disciplina</span><span>Créd.</span><span>Nota</span></div>
+              <div class="d-term">Período 2017/1</div>
+              <div class="tr1" data-d="c1"><span>CC101</span><span>Introdução à Computação</span><span>4</span><span>8,5</span></div>
+              <div class="tr1" data-d="c2"><span>CC112</span><span>Estruturas de Dados</span><span>3</span><span>9,3</span></div>
+              <div class="tr1" data-d="c3"><span>MA120</span><span>Álgebra Linear</span><span>3</span><span>7,6</span></div>
+              <div class="d-tot"><span>Totais do período:</span><span>10</span><span>SGPA = 8,47</span></div>
+              <div class="d-tot"><span>Acumulado:</span><span>10</span><span>CGPA = 8,47</span></div>
+              <div class="d-term">Período 2017/2</div>
+              <div class="tr1" data-d="c4"><span>CC230</span><span>Redes de Computadores</span><span>4</span><span>8,8</span></div>
+              <div class="tr1" data-d="c5"><span>CC240</span><span>Banco de Dados</span><span>4</span><span>8,9</span></div>
+              <div class="tr1" data-d="c6"><span>CC310</span><span>Engenharia de Software</span><span>4</span><span>9,1</span></div>
+              <div class="d-tot"><span>Totais do período:</span><span>12</span><span>SGPA = 8,93</span></div>
+              <div class="d-tot"><span>Acumulado:</span><span>22</span><span>CGPA = 8,72</span></div>
+            </div>
+            <p class="d-faint">(+ 36 disciplinas)</p>
+            <p class="d-sum" data-d="gpa"><u>Total de créditos:</u> <b>135</b> <u>CGPA final:</u> <b>8,7</b></p>
+            <div class="d-sg"><div><svg viewBox="0 0 90 26" aria-hidden="true"><path d="M4 18c6-14 10 4 15-6s6 10 12-2 8 8 14-2 6 6 12 0 8-4 14 2"/></svg><i></i><span>Chefe do Departamento (HoD)</span></div><div><svg viewBox="0 0 90 26" aria-hidden="true"><path d="M5 16c4-10 9 2 13-8 3 10 8 14 14 2s8-6 12 6 10-12 16-4 6 6 14 0"/></svg><i></i><span>Diretor da Faculdade (Dean)</span></div><div><svg viewBox="0 0 90 26" aria-hidden="true"><path d="M6 14c7-12 8 8 15-4s5 12 13 0 8 4 13-4 8 8 14 2 8-2 12 4"/></svg><i></i><span>Secretário Acadêmico</span></div></div>
+            <div class="d-cv"><b>ESCALA DE CONVERSÃO</b><div class="d-cvt"><span>Nota</span><span>9,0–10</span><span>8,0–8,9</span><span>7,0–7,9</span><span>6,0–6,9</span><span>&lt; 6,0</span><span>Conceito</span><span>A</span><span>B</span><span>C</span><span>D</span><span>F</span></div></div>
+          </div>
+          <div class="d-leg">DE ACORDO COM A LGPD, AS INFORMAÇÕES DESTE HISTÓRICO NÃO PODEM SER DIVULGADAS A TERCEIROS SEM O CONSENTIMENTO PRÉVIO DO ALUNO.</div>
+        </div>
+      </div>
+      <div class="pe-form">
+        <div class="pe-tabs sh-tabs"><span class="on" data-tab="cand"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-user"/></svg>Candidate Details</span><span><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-graduation-cap"/></svg>Education Details</span><span data-tab="grades"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-layout-grid"/></svg>Grades</span><span><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chart-line"/></svg>Academic Trend</span><span><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-book-open-check"/></svg>Accreditation</span></div>
+        <div class="pe-card"><div class="pe-scroll">
+          <div class="pe-r2"><label>Full Name</label><div class="f" data-s="name" data-v="Ana L. Ferreira"><u></u></div><label class="l2">Date of Birth</label><div class="f" data-s="dob" data-v="14/03/1998"><u></u></div></div>
+          <div class="pe-sec">Institution Details</div>
+          <div class="pe-r2"><label>Country<em>*</em></label><div class="f" data-s="country" data-v="Brazil"><u></u></div><label class="l2">Awarding Institution</label><div class="f" data-s="inst" data-v="Universidade do Vale Verde"><u></u></div></div>
+          <div class="pe-r2"><label>College / School Name</label><div class="f" data-s="inst" data-v="School of Computing"><u></u></div></div>
+          <div class="pe-sec">Program Overview</div>
+          <div class="pe-r2"><label>Education Level<em>*</em></label><div class="f" data-s="deg" data-v="Bachelors"><u></u></div><label class="l2">Credential Name<em>*</em></label><div class="f" data-s="deg" data-v="Bacharelado em Ciência da Comp."><u></u></div></div>
+          <div class="pe-r2"><label>Program<em>*</em></label><div class="f" data-s="deg" data-v="Computer Science"><u></u></div><label class="l2">Major / Specialization</label><div class="f" data-s="deg" data-v="-"><u></u></div></div>
+          <div class="pe-r2"><label>Qualification Status<em>*</em></label><div class="f" data-s="year" data-v="Completed"><u></u></div></div>
+          <div class="pe-sec">Academic Timeline</div>
+          <div class="pe-r2"><label>Year of Admission</label><div class="f" data-s="year" data-v="2017"><u></u></div><label class="l2">Year of Completion</label><div class="f" data-s="year" data-v="2021"><u></u></div></div>
+          <div class="pe-r2"><label>Program Duration (Years)<em>*</em></label><div class="f" data-s="year" data-v="4 years"><u></u></div><label class="l2">Date of Award<small>(DD/MM/YYYY)</small></label><div class="f" data-s="year" data-v="15/12/2021"><u></u></div></div>
+          <div class="pe-sec" data-sec="grades">Grades</div>
+          <div class="pe-gt">
+            <div class="g2 g2h"><span>Code</span><span>Course</span><span>Credits</span><span>Grade</span><span>Source</span></div>
+            <div class="g2" data-r="c1"><span>CC101</span><span>Introduction to Computing</span><span>4</span><span>8.5</span><span class="sh-badge b-n"><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-link"/></svg>Traced</span></div>
+            <div class="g2" data-r="c2"><span>CC112</span><span>Data Structures</span><span>3</span><span>9.3</span><span class="sh-badge b-n"><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-link"/></svg>Traced</span></div>
+            <div class="g2" data-r="c3"><span>MA120</span><span>Linear Algebra</span><span>3</span><span>7.6</span><span class="sh-badge b-n"><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-link"/></svg>Traced</span></div>
+            <div class="g2" data-r="c4"><span>CC230</span><span>Computer Networks</span><span>4</span><span>8.8</span><span class="sh-badge b-n"><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-link"/></svg>Traced</span></div>
+            <div class="g2" data-r="c5"><span>CC240</span><span>Databases</span><span>4</span><span>8.9</span><span class="sh-badge b-n"><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-link"/></svg>Traced</span></div>
+            <div class="g2" data-r="c6"><span>CC310</span><span>Software Engineering</span><span>4</span><span>9.1</span><span class="sh-badge b-n"><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-link"/></svg>Traced</span></div>
+          </div>
+          <div class="pe-note">42 courses extracted <i></i> 42 / 42 fields traced to source <i></i> Overall average 8.7</div>
+        </div></div>
+        <div class="pe-act"><span class="sh-btn sh-outline"><svg class="lu" aria-hidden="true"><use href="#lu-download"/></svg>Download<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></span><span class="sh-btn sh-outline"><svg class="lu" aria-hidden="true"><use href="#lu-save"/></svg>Save</span><span class="sh-btn sh-outline"><svg class="lu" aria-hidden="true"><use href="#lu-rotate-ccw"/></svg>Reset</span><b data-t="ev3"><svg class="lu" aria-hidden="true"><use href="#lu-sparkles"/></svg>Evaluate</b></div>
+      </div>
+    </section>
+
+    <!-- EVALUATION -->
+    <section class="p-scene p-eval" data-scene="evaluation">
+      <div class="crumb"><i class="bk"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-arrow-left"/></svg></i><div><p><span>Home</span><svg class="lu" aria-hidden="true"><use href="#lu-chevron-right"/></svg><span>Candidate Details</span><svg class="lu" aria-hidden="true"><use href="#lu-chevron-right"/></svg><span>Document Extraction Review</span><svg class="lu" aria-hidden="true"><use href="#lu-chevron-right"/></svg><b>Evaluation</b></p></div><div class="crumb-r"><small>Last edited: <b>Thu, May 22, 2025</b><span>Case ID: <b>43JWI</b><svg class="lu lu-xs" aria-hidden="true"><use href="#lu-link"/></svg></span></small><span class="sh-btn sh-outline"><svg class="lu" aria-hidden="true"><use href="#lu-file-text"/></svg>Add notes</span></div></div>
+      <div class="pv-view"><div class="pv-scroll">
+      <div class="pv-who sh-card"><b>Ana L. Ferreira <span class="flag">BR</span></b><small>Universidade do Vale Verde<i></i>Bachelor of Science (Honours) Computer Science<i></i>Computer Science<i></i>Passing Year 2021<i></i>CGPA 8.7</small></div>
+      <div class="pv-grid">
+        <div class="pv-card sh-card pv-gs"><h5>Grade scale</h5><div class="pv-sel"><div class="sh-input sh-select-in">WES Evaluation Scale (Brazil)<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></div><div class="sh-input sh-select-in sm">Country<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></div></div>
+          <div class="gt"><div class="gh"><span>Range</span><span>Grade</span><span>Eq. Grade</span><span>Eq. Points</span></div>
+            <div class="gr" data-g="1"><span>9-10</span><span><i>Ex</i>Excelente</span><span>A</span><span>4.0</span></div>
+            <div class="gr" data-g="2"><span>8-8.9</span><span><i>MB</i>Muito bom</span><span>A-</span><span>3.7</span></div>
+            <div class="gr" data-g="3"><span>7-7.9</span><span><i>B</i>Bom</span><span>B</span><span>3.0</span></div>
+            <div class="gr" data-g="4"><span>6-6.9</span><span><i>R</i>Regular</span><span>C</span><span>2.0</span></div>
+            <div class="gr" data-g="5"><span>5-5.9</span><span><i>S</i>Suficiente</span><span>D</span><span>1.0</span></div>
+            <div class="gr" data-g="6"><span>0-4.9</span><span><i>I</i>Insuficiente</span><span>F</span><span>0.0</span></div>
+          </div></div>
+        <div class="pv-card sh-card pv-cs"><h5>Credit Scale</h5><div class="cs-t"><div class="sh-tabs"><b>Default</b><span>Custom</span></div><div class="sh-btn sh-outline">Apply</div></div>
+          <p>TruEnroll's default credit scale fits most transcripts globally. Use this unless the source institution requires a specific conversion.</p>
+          <div class="cs-m"><div><span>Target credit</span><strong><i data-n="135" data-dec="0">135</i><small>credits as per the course</small></strong></div><div><span>Round-off factor</span><strong><i data-n="0.25" data-dec="2">0.25</i><small>rounding factor used</small></strong></div></div>
+          <div class="cs-eq"><div><b>Assign equal credits across courses</b><span>Distribute credits evenly across all courses, overriding any differences in source credits or maximum marks.</span></div><i class="sh-switch"></i></div></div>
+      </div>
+      <div class="pv-res">
+        <div class="eq-tab"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-graduation-cap"/></svg>Equivalent to</div>
+        <div class="eq-row rs">
+          <div class="eq-l eqc">
+            <div class="eq-s"><span class="eq-k">Equivalent Summary<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-pencil"/></svg></span><p>This candidate's academic credentials are comparable to completion of a Bachelor's degree in the United States educational system.</p></div>
+            <hr>
+            <div class="eq-s"><span class="eq-k">US equivalent courses<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-info"/></svg></span><p>Bachelor of Science in Computer Science</p></div>
+          </div>
+          <div class="eq-g">
+            <div class="eqc"><span>Source Credits</span><b><i data-n="135" data-dec="1">135.0</i></b></div>
+            <div class="eqc"><span>US Equivalent Credit</span><b><i data-n="121" data-dec="1">121.0</i></b></div>
+            <div class="eqc"><span>US Equivalent Weighted GPA</span><b><i data-n="3.714" data-dec="3">3.714</i><small>/ 4.0 scale</small></b></div>
+            <div class="eqc"><span>US Equivalent Unweighted GPA</span><b><i data-n="3.692" data-dec="3">3.692</i><small>/ 4.0 scale</small></b></div>
+          </div>
+        </div>
+      </div>
+      <div class="pv-ct sh-card">
+        <div class="ct-bar"><div class="ct-title"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-book-open"/></svg>Courses in GPA Calculation<small>42 courses</small></div><div class="ct-ctl"><span class="ct-sw"><i class="sh-switch on"></i>Show CIP Codes</span><span class="ct-fe">Field for evaluation</span><div class="sh-input sh-select-in ct-sel">Marks<svg class="lu lu-sm" aria-hidden="true"><use href="#lu-chevron-down"/></svg></div><span class="sh-btn sh-outline sh-icon sh-sm"><svg class="lu" aria-hidden="true"><use href="#lu-panel-right"/></svg></span></div></div>
+        <div class="ct-sub">Courses Included<small>42 courses</small></div>
+        <div class="ct-t">
+          <div class="ct-r ct-hd"><span></span><span>S.No.</span><span>Course Name</span><span>CIP Code</span><span>Academic Term</span><span>Credits</span><span>Eq. Credit</span><span class="ct-m">Marks</span><span>Eq. Grade</span></div>
+            <div class="ct-r"><span class="ct-i"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-circle-minus"/></svg></span><span>1</span><span>Introduction to Computing</span><span>11.0101</span><span>2017/1</span><span>4</span><span class="ct-e">4</span><span class="ct-m"><b>8.5</b><small>/10</small></span><span class="ct-e">3.7</span></div>
+            <div class="ct-r"><span class="ct-i"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-circle-minus"/></svg></span><span>2</span><span>Data Structures</span><span>11.0701</span><span>2017/2</span><span>3</span><span class="ct-e">3</span><span class="ct-m"><b>9.3</b><small>/10</small></span><span class="ct-e">4</span></div>
+            <div class="ct-r"><span class="ct-i"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-circle-minus"/></svg></span><span>3</span><span>Linear Algebra</span><span>27.0101</span><span>2017/1</span><span>3</span><span class="ct-e">3</span><span class="ct-m"><b>7.6</b><small>/10</small></span><span class="ct-e">3</span></div>
+            <div class="ct-r"><span class="ct-i"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-circle-minus"/></svg></span><span>4</span><span>Computer Networks</span><span>11.0901</span><span>2018/1</span><span>4</span><span class="ct-e">4</span><span class="ct-m"><b>8.8</b><small>/10</small></span><span class="ct-e">3.7</span></div>
+            <div class="ct-r"><span class="ct-i"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-circle-minus"/></svg></span><span>5</span><span>Databases</span><span>11.0802</span><span>2018/2</span><span>4</span><span class="ct-e">4</span><span class="ct-m"><b>8.9</b><small>/10</small></span><span class="ct-e">3.7</span></div>
+            <div class="ct-r"><span class="ct-i"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-circle-minus"/></svg></span><span>6</span><span>Software Engineering</span><span>14.0903</span><span>2019/1</span><span>4</span><span class="ct-e">4</span><span class="ct-m"><b>9.1</b><small>/10</small></span><span class="ct-e">4</span></div>
+            <div class="ct-r"><span class="ct-i"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-circle-minus"/></svg></span><span>7</span><span>Algorithms</span><span>11.0701</span><span>2018/1</span><span>4</span><span class="ct-e">4</span><span class="ct-m"><b>8.2</b><small>/10</small></span><span class="ct-e">3.7</span></div>
+            <div class="ct-r"><span class="ct-i"><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-circle-minus"/></svg></span><span>8</span><span>Operating Systems</span><span>11.0701</span><span>2019/1</span><span>4</span><span class="ct-e">4</span><span class="ct-m"><b>9.0</b><small>/10</small></span><span class="ct-e">4</span></div>
+        </div>
+      </div>
+      </div></div>
+      <div class="pv-bar"><span class="sh-btn sh-outline"><svg class="lu" aria-hidden="true"><use href="#lu-download"/></svg>Download</span><span class="sh-btn done" data-t="save">Save and Complete</span><span class="nxt">Next Education Level<svg class="lu" aria-hidden="true"><use href="#lu-chevron-right"/></svg></span></div>
+    </section>
+  </div>
+  <div class="p-pops" hidden>
+    <div class="pp" data-pop="signin"><i class="pi ok"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-circle-check"/></svg></i><div><b>Signed in</b><small>evaluator@university.edu</small></div></div>
+    <div class="pp" data-pop="case"><i class="pi"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-file-text"/></svg></i><div><b>Case 5683XX</b><small>Ana L. Ferreira · document ready</small></div></div>
+    <div class="pp" data-pop="ai"><i class="pi ai"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-sparkles"/></svg></i><div><b>AI checked 4 documents</b><small>Issues surfaced for review</small></div></div>
+    <div class="pp" data-pop="variation"><i class="pi warn"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-triangle-alert"/></svg></i><div><b>Grade table variation</b><small>Surfaced for reviewer visibility</small></div></div>
+    <div class="pp" data-pop="scan"><i class="pi"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-search"/></svg></i><div><b>Scanning transcript</b><span class="pbar"><u></u></span></div></div>
+    <div class="pp" data-pop="fields"><i class="pi ok"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-circle-check"/></svg></i><div><b>42 fields matched to source</b><small>Each value linked to its location</small></div></div>
+    <div class="pp" data-pop="trace"><i class="pi"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-link"/></svg></i><div><b>42 / 42 traced</b><small>Click a field to see its source</small></div></div>
+    <div class="pp" data-pop="scale"><i class="pi"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-scale"/></svg></i><div><b>Brazil 0–10 → US 4.0</b><small>WES Evaluation Scale applied</small></div></div>
+    <div class="pp big" data-pop="gpa"><small>US EQUIVALENT GPA</small><div class="g"><b>3.71</b><span>/ 4.0</span></div><em><svg class="lu lu-sm" aria-hidden="true"><use href="#lu-circle-check"/></svg>Verified</em></div>
+    <div class="pp" data-pop="report"><i class="pi ok"><svg class="lu lu-lg" aria-hidden="true"><use href="#lu-file-check"/></svg></i><div><b>Evaluation report ready</b><small>PDF · attached to the case</small></div></div>
+  </div>
+  <div class="p-cur"><svg viewBox="0 0 24 24"><path d="M5 3l14 7-6 2-2 6z"/></svg><i></i></div>
+</div>
+</template>
+
+<script src="/js/wfgallery.js" defer></script>
+<script src="/js/story.js" defer></script>
+<script src="/js/hero-words.js" defer></script>
+<script src="/js/layer.js" defer></script>
+
+</main>
+<footer class="sf"><div class="wrap">
+  <div class="sf-main">
+    <div class="sf-brand">
+      <a href="/" aria-label="TruEnroll, home"><img class="sf-logo" src="/assets/truenroll-logo-on-dark.svg" alt="" width="363" height="60"></a>
+      <p class="sf-tag">Frictionless credentialing ecosystem for enterprises!</p>
+      <p class="sf-addr">HQ: 230 Park Avenue, 3rd Floor, New York NY 10169</p>
+      <div class="sf-social"><a href="https://www.linkedin.com/company/trential/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.5 9.5v8M6.5 6.5v.01M10.5 17.5v-8M10.5 13a3.2 3.2 0 016.4 0v4.5"/></svg></a><a href="https://x.com/trentialtech" aria-label="X"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></a></div>
+    </div>
+    <div class="sf-cols">
+      <div><p class="sf-h">Products</p><a href="/"><span>TruEnroll</span></a><a href="https://trential.com/wallet"><span>Wallet</span></a><a href="https://trential.com/verity"><span>Verity</span></a><a href="https://trential.com/ecosystem"><span>Ecosystem</span></a></div>
+      <div><p class="sf-h">Company</p><a href="https://trential.com/about"><span>Our story</span></a><a href="https://trential.com/careers"><span>Careers</span></a><a href="https://truenroll.com/blogs"><span>Blog</span></a><a href="https://truenroll.com/feeds"><span>Resource hub</span></a><a href="/services/evaluation/"><span>Services</span></a><a href="/contact/"><span>Contact us</span></a></div>
+      <div><p class="sf-h">Connect with us</p><a href="mailto:info@trential.com"><span>info@trential.com</span></a><a href="https://wa.me/+16503055384"><span>+1 (650) 305 5384</span></a><p class="sf-addr">Find us in: New York, San Francisco, Delaware and Gurugram</p></div>
+    </div>
+  </div>
+  <div class="sf-legal">
+    <span class="sf-llinks"><a href="https://trential.com/legal/truenroll-terms-and-conditions"><span>Terms of service</span></a><a href="https://trential.com/legal/truenroll-privacy-policy"><span>Privacy policy</span></a><a href="https://trential.com/legal/trential-ccpa-privacy-notice"><span>CCPA privacy notice</span></a><a href="https://www.framer.com/legal/policy/"><span>Cookie policy</span></a></span>
+    <span>© 2026. All Rights Reserved. TruCredentials, Inc. <i class="sep">|</i> DBA - Trential</span>
+  </div>
+</div>
+<div class="sf-mark" aria-hidden="true">truEnroll</div>
+</footer>
+
+<script src="/js/buttons.js" defer></script>
+<script src="/js/forms.js" defer></script>
+<script src="/js/main.js" defer></script>
+<script src="/js/portal.js" defer></script>
+<script src="/js/dots.js" defer></script>
+</body>
+</html>

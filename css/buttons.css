@@ -1,0 +1,125 @@
+/* ==========================================================================
+   Buttons
+   Variants: .btn-primary (ink) · .btn-secondary (outline) · sizes .btn-sm .btn-lg · .btn-block
+   Micro-interactions (see buttons.js):
+     - fill sweep expands from where the pointer entered / leaves from where it exited
+     - label rolls up and is replaced by a duplicate
+     - arrow chip: arrow exits right while a new one enters from the left
+     - magnetic pull toward the pointer, springy return
+     - press squash, click ripple
+     - states via data-state: idle · loading (spinner) · success (check)
+     - invalid-submit shake
+   ========================================================================== */
+.btn{
+  --bg:var(--ink); --fg:var(--paper); --fill:var(--accent); --bd:transparent;
+  --tx:0px; --ty:0px; --s:1;
+  position:relative; isolation:isolate; overflow:hidden;
+  display:inline-flex; align-items:center; justify-content:center; gap:12px;
+  padding:12px 20px; border:1px solid var(--bd); border-radius:999px;
+  background:var(--bg); color:var(--fg);
+  font:600 15px/1 var(--sans); letter-spacing:-.005em; white-space:nowrap;
+  cursor:pointer; text-decoration:none; -webkit-tap-highlight-color:transparent;
+  transform:translate3d(var(--tx),var(--ty),0) scale(var(--s));
+  transition:transform .55s var(--spring),color .3s,border-color .3s,background-color .3s,box-shadow .3s;
+}
+button.btn{font-family:var(--sans)}
+.btn-primary{--bg:var(--ink);--fg:var(--paper);--fill:var(--accent)}
+.btn-secondary{--bg:transparent;--fg:var(--ink);--bd:var(--line2);--fill:var(--ink)}
+.btn-sm{padding:9px 16px;font-size:14px}
+.btn-lg{padding:16px 22px;font-size:16px}
+.btn-block{display:flex;width:100%}
+.btn.has-arrow{padding:7px 7px 7px 22px}
+.btn-sm.has-arrow{padding:5px 5px 5px 16px}
+.btn-lg.has-arrow{padding:8px 8px 8px 26px}
+.btn-block.has-arrow{justify-content:space-between}
+
+/* hover fill: a circle that grows from the pointer entry point (set by JS) */
+.b-fill{
+  position:absolute; z-index:-1; left:var(--px,50%); top:var(--py,50%);
+  width:var(--d,320px); height:var(--d,320px); border-radius:50%;
+  background:var(--fill); pointer-events:none;
+  transform:translate(-50%,-50%) scale(0);
+  transition:transform .6s var(--ease),left 0s,top 0s;
+}
+.btn:focus-visible .b-fill{transform:translate(-50%,-50%) scale(1)}
+@media(hover:hover){.btn:hover .b-fill{transform:translate(-50%,-50%) scale(1)}}
+.btn-secondary:focus-visible{--fg:var(--paper);--bd:var(--ink)}
+@media(hover:hover){.btn-secondary:hover{--fg:var(--paper);--bd:var(--ink)}}
+.btn-primary:focus-visible{box-shadow:0 12px 24px -14px rgba(63,81,181,.65)}
+@media(hover:hover){.btn-primary:hover{box-shadow:0 12px 24px -14px rgba(63,81,181,.65)}}
+
+/* label roll */
+.b-text{position:relative;display:block;overflow:hidden;height:1.25em;line-height:1.25}
+.b-t1,.b-t2{display:block;transition:transform .5s var(--ease)}
+.b-t2{position:absolute;left:0;top:100%}
+.btn:focus-visible .b-t1,.btn:focus-visible .b-t2{transform:translateY(-100%)}
+@media(hover:hover){.btn:hover .b-t1,.btn:hover .b-t2{transform:translateY(-100%)}}
+
+/* arrow chip: arrow passes through left to right */
+.b-arrow{
+  position:relative; flex:none; overflow:hidden; display:inline-block;
+  width:28px; height:28px; border-radius:50%;
+  background:rgba(249,250,252,.14); color:inherit;
+  transition:background-color .3s,color .3s;
+}
+.btn-sm .b-arrow{width:24px;height:24px}
+.btn-lg .b-arrow{width:32px;height:32px}
+.b-arrow svg{
+  position:absolute; left:50%; top:50%; width:14px; height:14px; margin:-7px 0 0 -7px;
+  fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round;
+  transition:transform .5s var(--ease);
+}
+.b-arrow svg:nth-child(2){transform:translateX(-26px)}
+.btn:focus-visible .b-arrow svg:nth-child(1){transform:translateX(26px)}
+@media(hover:hover){.btn:hover .b-arrow svg:nth-child(1){transform:translateX(26px)}}
+.btn:focus-visible .b-arrow svg:nth-child(2){transform:none}
+@media(hover:hover){.btn:hover .b-arrow svg:nth-child(2){transform:none}}
+.btn:focus-visible .b-arrow{background:var(--paper);color:var(--accent)}
+@media(hover:hover){.btn:hover .b-arrow{background:var(--paper);color:var(--accent)}}
+.btn-secondary .b-arrow{background:rgba(11,27,45,.07)}
+.btn-secondary:focus-visible .b-arrow{background:rgba(249,250,252,.18);color:var(--paper)}
+@media(hover:hover){.btn-secondary:hover .b-arrow{background:rgba(249,250,252,.18);color:var(--paper)}}
+
+/* press + ripple */
+.btn:active{--s:.96;transition-duration:.12s}
+.b-ripple{
+  position:absolute; z-index:-1; border-radius:50%; background:currentColor; opacity:.22; pointer-events:none;
+  transform:translate(-50%,-50%) scale(0); animation:ripple .75s var(--ease) forwards;
+}
+@keyframes ripple{to{transform:translate(-50%,-50%) scale(1);opacity:0}}
+
+/* states */
+.b-state{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transform:translateY(8px);transition:opacity .25s,transform .35s var(--ease);pointer-events:none}
+.b-spin::after{content:"";width:17px;height:17px;border-radius:50%;border:2px solid currentColor;border-right-color:transparent;animation:spin .7s linear infinite}
+.b-check svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.b-check path{stroke-dasharray:1;stroke-dashoffset:1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.btn[data-state="loading"],.btn[data-state="success"]{pointer-events:none}
+.btn[data-state="loading"] .b-text,.btn[data-state="loading"] .b-arrow,
+.btn[data-state="success"] .b-text,.btn[data-state="success"] .b-arrow{opacity:0;transform:translateY(-8px);transition:opacity .2s,transform .3s var(--ease)}
+.btn[data-state="loading"] .b-spin{opacity:1;transform:none}
+.btn[data-state="success"] .b-check{opacity:1;transform:none}
+.btn[data-state="success"] .b-check path{stroke-dashoffset:0;transition:stroke-dashoffset .5s var(--ease) .1s}
+.btn[data-state="success"]{--bg:var(--accent)}
+
+/* invalid-submit shake */
+.btn.shake{animation:shake .45s cubic-bezier(.36,.07,.19,.97)}
+@keyframes shake{10%,90%{transform:translateX(-1px)}20%,80%{transform:translateX(3px)}30%,50%,70%{transform:translateX(-5px)}40%,60%{transform:translateX(5px)}}
+
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.btn[disabled],.btn[aria-disabled="true"]{opacity:.5;pointer-events:none}
+
+/* reduced motion: keep color feedback, drop movement */
+@media (prefers-reduced-motion:reduce){
+  .btn{transition:color .15s,background-color .15s,border-color .15s}
+  .b-fill,.b-ripple,.b-t2{display:none}
+  .b-t1,.b-arrow svg{transition:none}
+  .btn:hover .b-t1,.btn:focus-visible .b-t1{transform:none}
+  .btn:hover .b-arrow svg:nth-child(1){transform:none}
+  .btn:hover .b-arrow svg:nth-child(2){transform:translateX(-26px)}
+  .btn-primary:hover,.btn-primary:focus-visible{--bg:var(--accent)}
+  .btn-secondary:hover,.btn-secondary:focus-visible{--bg:var(--ink)}
+  .btn:active{--s:1}
+  .btn.shake{animation:none}
+  .b-spin::after{animation-duration:1.6s}
+}

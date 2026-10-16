@@ -1,0 +1,44 @@
+/* Automated workflow: highlights gallery (pattern after Apple's media-card gallery).
+   Native scroll-snap carousel; the centred card is active, neighbours peek. wfgallery.js drives autoplay, dots and pause. */
+.workflow.dark{overflow:clip}
+.wfg-wrap{--cw:min(1060px,86vw);--dur:12000ms}
+.wfg{display:flex;gap:24px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;
+  padding:8px calc((100% - var(--cw)) / 2) 28px;-webkit-overflow-scrolling:touch}
+.wfg::-webkit-scrollbar{display:none}
+.wfg:focus-visible{outline:2px solid var(--accent-lt);outline-offset:-2px;border-radius:28px}
+.wf-card{flex:none;width:var(--cw);min-height:540px;scroll-snap-align:center;display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:40px;align-items:center;
+  padding:48px;border:1px solid var(--ink2);border-radius:28px;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--paper) 7%,var(--ink)),var(--ink));
+  box-shadow:0 40px 80px -50px rgba(0,0,0,.9);transition:opacity .5s var(--ease),transform .6s var(--ease)}
+.wf-card:not(.on){opacity:.38;transform:scale(.94)}
+.wf-card .wtext>p{max-width:none}
+.wf-card .wvis{padding:12px}
+.wfg-ctl{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:6px;padding-bottom:20px}
+.wfg-dots{display:flex;align-items:center;gap:6px;height:52px;padding-inline:14px;border-radius:99px;background:rgba(249,250,252,.08)}
+.wfg-dot{position:relative;display:grid;place-items:center;width:22px;height:30px;border:0;padding:0;background:none;cursor:pointer;transition:width .45s var(--ease)}
+.wfg-dot i{position:relative;display:block;width:8px;height:8px;border-radius:99px;background:rgba(249,250,252,.38);overflow:hidden;transition:width .45s var(--ease),background .3s}
+.wfg-dot:hover i{background:rgba(249,250,252,.65)}
+.wfg-dot.on{width:54px}.wfg-dot.on i{width:46px;background:rgba(249,250,252,.28)}
+.wfg-dot.on i::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--paper);transform-origin:0 50%;transform:scaleX(0)}
+.wfg-wrap.run .wfg-dot.on i::after{animation:wfgp var(--dur) linear forwards}
+.wfg-wrap.stopped .wfg-dot.on i::after{transform:scaleX(1);animation:none}
+.wfg-wrap.hold .wfg-dot.on i::after{animation-play-state:paused}
+@keyframes wfgp{to{transform:scaleX(1)}}
+.wfg-dot:focus-visible,.wfg-pp:focus-visible{outline:2px solid var(--accent-lt);outline-offset:3px}
+.wfg-pp{display:grid;place-items:center;width:52px;height:52px;border:0;border-radius:50%;background:rgba(249,250,252,.08);color:var(--paper);cursor:pointer;transition:background .25s}
+@media(hover:hover){.wfg-pp:hover{background:rgba(249,250,252,.16)}}
+.wfg-pp .lu{width:20px;height:20px;fill:currentColor;stroke:none}
+.wfg-pp .pp-play{display:none}.wfg-wrap.paused .pp-pause,.wfg-wrap.stopped .pp-pause{display:none}.wfg-wrap.paused .pp-play,.wfg-wrap.stopped .pp-play{display:block}
+@media(max-width:960px){
+  .wfg-wrap{--cw:88vw}
+  .wf-card{grid-template-columns:1fr;gap:24px;padding:28px 22px;min-height:0;border-radius:22px}
+}
+@media(prefers-reduced-motion:reduce){.wf-card{transition:none}.wfg-pp{display:none}.wfg-dot.on i::after{transform:scaleX(1);animation:none}}
+
+/* vertical scroll drives the cards sideways (desktop, when the section fits the viewport) */
+.workflow.wf-scroll{padding-block:0 88px}
+.workflow.wf-scroll .wf-pin{position:sticky;top:0;padding-top:84px;box-sizing:border-box}
+.workflow.wf-scroll .wfg{overflow-x:hidden;scroll-snap-type:none;scroll-behavior:auto}
+.workflow.wf-scroll .wf-pin .head{margin-bottom:20px}
+.wfg-wrap.scrolled .wfg-pp{display:none}
+.wfg-wrap.scrolled .wfg-dot.on i::after{transform:scaleX(1);animation:none}

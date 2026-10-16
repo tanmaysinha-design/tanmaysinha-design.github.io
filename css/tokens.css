@@ -1,0 +1,24 @@
+/* Design tokens: Trential Design System, alias mode "truenroll" */
+:root{
+  /* Trential Design System, mode "truenroll": neutral scale + one accent */
+  --paper:#F9FAFC;   /* neutral/50  */
+  --paper2:#F0F4F9;  /* neutral/100 */
+  --line:#E1E9F2;    /* neutral/200 */
+  --line2:#C7D5E3;   /* neutral/300 */
+  --mute:#5E7690;    /* neutral/500 */
+  --body:#40566E;    /* neutral/600 */
+  --ink:#0B1B2D;     /* neutral/900 */
+  --ink2:#182B3F;    /* neutral/800 */
+  --accent:#3F51B5;  /* primary/default (accent only) */
+  --accent-lt:#8F9DEB;
+  --display:'Bricolage Grotesque','Nunito Sans',system-ui,sans-serif;
+  --sans:'Nunito Sans',system-ui,sans-serif;
+  --mono:'Geist Mono',ui-monospace,monospace;
+  --mist:#8CA3BB;    /* neutral/400: muted text on dark */
+  --d-surface:#0F1D33; /* dark panels */
+  --d-line:#2E435A;  /* neutral/700: lines on dark */
+  --d-text:#9FB0C6;  /* body text on dark */
+  --error:#C9372C;   /* error/default, form states only */
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --spring:cubic-bezier(.34,1.56,.64,1);
+}
